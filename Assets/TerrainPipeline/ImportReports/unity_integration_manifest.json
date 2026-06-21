@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T16:16:49.7320950Z",
+    "generatedAtUtc": "2026-06-21T16:29:25.2885020Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -195,12 +195,27 @@
         "trackerComponent": "ExplorationObjectiveTracker",
         "objectiveCount": 5,
         "runtimeHud": true,
+        "miniMapHud": true,
         "objectives": [
             "Camp de depart",
             "Pont des basses terres",
             "Entree de grotte",
             "Ruines anciennes",
             "Tour du canyon"
+        ]
+    },
+    "navigationLayer": {
+        "sceneRoot": "Navigation_Signage_1km_World_Readability",
+        "physicalSignpostCount": 8,
+        "signposts": [
+            "WorldSign_Camp",
+            "WorldSign_Bridge",
+            "WorldSign_Cave",
+            "WorldSign_Ruins",
+            "WorldSign_Tower",
+            "WorldSign_NorthFork",
+            "WorldSign_CaveFork",
+            "WorldSign_CanyonFork"
         ]
     },
     "toolStates": [
