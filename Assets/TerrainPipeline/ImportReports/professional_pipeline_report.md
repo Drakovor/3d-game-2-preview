@@ -37,6 +37,7 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Biome dressing: forest trees/deadwood, ruin columns, canyon boulders, cave torches, crystal clusters, and snow cairns are generated in Unity and snapped to the Houdini terrain.
 - Gameplay pass: `Gameplay_Explorable_1km_Level_Set` adds a spawn base camp, lowland bridge, cave worksite, ruin objective, canyon watchtower, collidable props, and visible objective beacons.
 - Nature scatter pass: `Nature_Mask_Guided_Scatter_1km` adds generated groves, lake reeds, river-bank vegetation, scree rocks, mossy stones, and deadwood over the heightmap.
+- Exploration loop: `ExplorationObjectiveTracker` tracks five reachable sites with distance and direction feedback in Play mode.
 - Overview verification: `World_Overview_Camera` is kept for whole-map captures and does not replace the playable camera.
 
 ## Blocking Items For Final Quality

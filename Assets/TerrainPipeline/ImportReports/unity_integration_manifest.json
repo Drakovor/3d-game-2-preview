@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T16:05:17.9664020Z",
+    "generatedAtUtc": "2026-06-21T16:16:49.7320950Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -189,6 +189,18 @@
             "river bank vegetation",
             "scree and mossy rock bands",
             "fallen deadwood and brush"
+        ]
+    },
+    "objectiveLoop": {
+        "trackerComponent": "ExplorationObjectiveTracker",
+        "objectiveCount": 5,
+        "runtimeHud": true,
+        "objectives": [
+            "Camp de depart",
+            "Pont des basses terres",
+            "Entree de grotte",
+            "Ruines anciennes",
+            "Tour du canyon"
         ]
     },
     "toolStates": [
