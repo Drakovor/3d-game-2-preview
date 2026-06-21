@@ -385,11 +385,137 @@ function buildTerrainMesh(image) {
     positions: new Float32Array(positions),
     colors: new Float32Array(colors),
     indices: new Uint16Array(indices),
+    heights,
     grid
   };
 }
 
-async function initTerrain3d() {
+function previewX(worldX) {
+  return (worldX / 1000) * 6.5;
+}
+
+function previewZ(worldZ) {
+  return (worldZ / 1000) * 6.5;
+}
+
+function sampleTerrainHeight(mesh, worldX, worldZ) {
+  const u = Math.max(0, Math.min(1, (worldX + 500) / 1000));
+  const v = Math.max(0, Math.min(1, (worldZ + 500) / 1000));
+  const x = u * (mesh.grid - 1);
+  const z = v * (mesh.grid - 1);
+  const x0 = Math.floor(x);
+  const z0 = Math.floor(z);
+  const x1 = Math.min(mesh.grid - 1, x0 + 1);
+  const z1 = Math.min(mesh.grid - 1, z0 + 1);
+  const tx = x - x0;
+  const tz = z - z0;
+  const h00 = mesh.heights[z0 * mesh.grid + x0];
+  const h10 = mesh.heights[z0 * mesh.grid + x1];
+  const h01 = mesh.heights[z1 * mesh.grid + x0];
+  const h11 = mesh.heights[z1 * mesh.grid + x1];
+  const h0 = h00 * (1 - tx) + h10 * tx;
+  const h1 = h01 * (1 - tx) + h11 * tx;
+  return ((h0 * (1 - tz) + h1 * tz) * 1.95) - 0.25;
+}
+
+function addBox(target, center, size, color) {
+  const start = target.positions.length / 3;
+  const [cx, cy, cz] = center;
+  const [sx, sy, sz] = size.map((value) => value * 0.5);
+  const verts = [
+    [cx - sx, cy - sy, cz - sz], [cx + sx, cy - sy, cz - sz], [cx + sx, cy + sy, cz - sz], [cx - sx, cy + sy, cz - sz],
+    [cx - sx, cy - sy, cz + sz], [cx + sx, cy - sy, cz + sz], [cx + sx, cy + sy, cz + sz], [cx - sx, cy + sy, cz + sz]
+  ];
+  const faces = [
+    [0, 1, 2], [0, 2, 3],
+    [4, 6, 5], [4, 7, 6],
+    [0, 4, 5], [0, 5, 1],
+    [1, 5, 6], [1, 6, 2],
+    [2, 6, 7], [2, 7, 3],
+    [3, 7, 4], [3, 4, 0]
+  ];
+  verts.forEach((vertex, index) => {
+    const shade = index >= 4 ? 0.86 : 1.0;
+    target.positions.push(...vertex);
+    target.colors.push(color[0] * shade, color[1] * shade, color[2] * shade);
+  });
+  faces.forEach((face) => target.indices.push(start + face[0], start + face[1], start + face[2]));
+}
+
+function addRockColumn(target, center, height, radius, color, seed = 0) {
+  const start = target.positions.length / 3;
+  const segments = 9;
+  const [cx, baseY, cz] = center;
+  target.positions.push(cx, baseY + height, cz);
+  target.colors.push(color[0] * 1.14, color[1] * 1.14, color[2] * 1.14);
+  for (let ring = 0; ring < 2; ring += 1) {
+    const y = ring === 0 ? baseY : baseY + height * 0.10;
+    const localRadius = ring === 0 ? radius * 1.10 : radius;
+    for (let i = 0; i < segments; i += 1) {
+      const angle = (i / segments) * Math.PI * 2;
+      const wobble = 0.78 + Math.sin(i * 1.73 + seed) * 0.12 + Math.cos(i * 2.41 + seed) * 0.10;
+      target.positions.push(cx + Math.cos(angle) * localRadius * wobble, y, cz + Math.sin(angle) * localRadius * wobble);
+      const shade = 0.62 + (i % 3) * 0.09;
+      target.colors.push(color[0] * shade, color[1] * shade, color[2] * shade);
+    }
+  }
+  const top = start;
+  const lower = start + 1;
+  const upper = start + 1 + segments;
+  for (let i = 0; i < segments; i += 1) {
+    const next = (i + 1) % segments;
+    target.indices.push(top, upper + i, upper + next);
+    target.indices.push(lower + i, lower + next, upper + i);
+    target.indices.push(upper + i, lower + next, upper + next);
+  }
+}
+
+function addHoudiniPreviewChunks(mesh, houdiniAssets) {
+  const target = {
+    positions: Array.from(mesh.positions),
+    colors: Array.from(mesh.colors),
+    indices: Array.from(mesh.indices)
+  };
+  const rock = [0.48, 0.38, 0.28];
+  const ember = [0.82, 0.39, 0.17];
+  const shadow = [0.18, 0.15, 0.13];
+
+  houdiniAssets.forEach((asset) => {
+    const position = asset.position || [0, 0, 0];
+    const x = previewX(position[0]);
+    const z = previewZ(position[2]);
+    const y = sampleTerrainHeight(mesh, position[0], position[2]) + 0.04;
+
+    if (asset.name.includes("CliffWall")) {
+      for (let i = 0; i < 7; i += 1) {
+        addRockColumn(target, [x + (i - 3) * 0.17, y, z + Math.sin(i) * 0.08], 0.72 + (i % 3) * 0.15, 0.10 + (i % 2) * 0.03, rock, i * 2.1);
+      }
+      addBox(target, [x, y + 0.08, z + 0.14], [1.36, 0.18, 0.13], shadow);
+    } else if (asset.name.includes("CaveEntrance")) {
+      addRockColumn(target, [x - 0.22, y, z], 0.56, 0.10, rock, 4);
+      addRockColumn(target, [x + 0.22, y, z], 0.60, 0.11, rock, 7);
+      addBox(target, [x, y + 0.56, z], [0.70, 0.17, 0.24], rock);
+      addBox(target, [x, y + 0.20, z - 0.02], [0.28, 0.36, 0.12], shadow);
+    } else if (asset.name.includes("CanyonSegment")) {
+      for (let side = -1; side <= 1; side += 2) {
+        for (let i = 0; i < 5; i += 1) {
+          addRockColumn(target, [x + side * 0.35, y, z + (i - 2) * 0.20], 0.34 + i * 0.05, 0.08, i % 2 ? ember : rock, i + side * 12);
+        }
+      }
+      addBox(target, [x, y + 0.02, z], [0.26, 0.06, 1.02], shadow);
+    }
+  });
+
+  return {
+    positions: new Float32Array(target.positions),
+    colors: new Float32Array(target.colors),
+    indices: new Uint16Array(target.indices),
+    grid: mesh.grid,
+    heights: mesh.heights
+  };
+}
+
+async function initTerrain3d(houdiniAssets = []) {
   if (!terrainCanvas) {
     return;
   }
@@ -407,7 +533,8 @@ async function initTerrain3d() {
     return;
   }
 
-  const mesh = buildTerrainMesh(image);
+  const terrainMesh = buildTerrainMesh(image);
+  const mesh = addHoudiniPreviewChunks(terrainMesh, houdiniAssets);
   const program = createProgram(gl);
   gl.useProgram(program);
 
@@ -458,7 +585,7 @@ async function initTerrain3d() {
     radius = Math.max(4.2, Math.min(11.0, radius + event.deltaY * 0.006));
   }, { passive: false });
 
-  terrain3dStatus.textContent = "Drag to orbit · wheel to zoom";
+  terrain3dStatus.textContent = `Terrain + ${houdiniAssets.length} Houdini chunk(s) · drag to orbit · wheel to zoom`;
 
   function resize() {
     const rect = terrainCanvas.getBoundingClientRect();
@@ -520,7 +647,7 @@ async function main() {
   await renderTerrainStatus();
   await renderToolStatus(houdiniAssets.length);
   await renderPreflight();
-  await initTerrain3d();
+  await initTerrain3d(houdiniAssets);
 }
 
 main();
