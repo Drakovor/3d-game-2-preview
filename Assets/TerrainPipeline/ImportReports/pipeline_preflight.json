@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T14:29:43Z",
+  "generatedAt": "2026-06-21T14:56:47Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "gates": [
     {
@@ -26,7 +26,7 @@
     {
       "name": "Reference/static mesh chunks",
       "state": "ready",
-      "summary": "41 LOD0 FBX reference/static chunk(s) found.",
+      "summary": "44 LOD0 FBX reference/static chunk(s) found.",
       "evidence": "Assets/Art/Environment/FloatingWorld/FBX",
       "nextAction": "Replace or augment blockout chunks with Houdini/ZBrush/Substance assets as they become available."
     },

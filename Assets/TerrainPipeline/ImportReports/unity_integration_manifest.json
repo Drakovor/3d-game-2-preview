@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T14:30:28.8968420Z",
+    "generatedAtUtc": "2026-06-21T14:57:58.0266320Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -61,7 +61,7 @@
         "houdiniCellCount": 0,
         "cc0MeshCellCount": 5,
         "referenceCellCount": 85,
-        "meshColliderCount": 2563,
+        "meshColliderCount": 2598,
         "streamCellNames": [
             "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
@@ -132,9 +132,9 @@
             "Blender_TerrainButtress_NorthRidgeShoulder_StreamCell",
             "Blender_TerrainButtress_CanyonWall_StreamCell",
             "Blender_DeadForestCluster_WestReturn_StreamCell",
-            "Blender_RavineWall_SpawnLeft_StreamCell",
-            "Blender_RavineWall_SpawnRight_StreamCell",
-            "Blender_RuinGate_SpawnMouth_StreamCell",
+            "Blender_ErodedRockSpine_SpawnLeftBank_StreamCell",
+            "Blender_ErodedRockSpine_SpawnShoulder_StreamCell",
+            "Blender_ScreeField_SpawnMouthDetail_StreamCell",
             "Blender_ScreeField_SpawnForeground_StreamCell",
             "Blender_RootBrush_SpawnLeftEdge_StreamCell",
             "Blender_RootBrush_SpawnRightEdge_StreamCell",
@@ -197,7 +197,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "115 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "124 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",

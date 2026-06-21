@@ -1,9 +1,9 @@
 {
-    "generatedAtUtc": "2026-06-21T14:30:33.6094010Z",
+    "generatedAtUtc": "2026-06-21T14:58:02.8654650Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
     "buildTarget": "WebGL",
     "unityBuildResult": "Succeeded",
-    "totalSizeBytes": 34563212
+    "totalSizeBytes": 34636182
 }
