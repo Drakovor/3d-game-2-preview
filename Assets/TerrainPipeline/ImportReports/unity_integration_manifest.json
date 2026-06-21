@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T16:29:25.2885020Z",
+    "generatedAtUtc": "2026-06-21T17:21:05.9722190Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -216,6 +216,54 @@
             "WorldSign_NorthFork",
             "WorldSign_CaveFork",
             "WorldSign_CanyonFork"
+        ]
+    },
+    "kenneyArchitectureKit": {
+        "sceneRoot": "Kenney_Fantasy_Town_Real_Architecture",
+        "source": "Kenney Fantasy Town Kit 2.0",
+        "license": "Creative Commons Zero (CC0)",
+        "importedFbxCount": 167,
+        "placedDistricts": [
+            "SpawnVillage",
+            "LowlandMarket",
+            "AncientRuinTown",
+            "CanyonMill"
+        ],
+        "exampleModels": [
+            "windmill",
+            "watermill-wide",
+            "wall-door",
+            "wall-window-shutters",
+            "roof-gable",
+            "stall-red",
+            "fountain-round-detail",
+            "fence-gate",
+            "road",
+            "lantern"
+        ]
+    },
+    "kenneyNatureKit": {
+        "sceneRoot": "Kenney_NatureKit_Real_Environment",
+        "source": "Kenney Nature Kit 2.1",
+        "license": "Creative Commons Zero (CC0)",
+        "importedFbxCount": 329,
+        "placedSystems": [
+            "real tree and bush groves",
+            "real bridge and cave props",
+            "real tents, signs, campfire and fences",
+            "real crop rows and route props"
+        ],
+        "exampleModels": [
+            "tree_pineTallA",
+            "tree_oak",
+            "bridge_woodRound",
+            "cliff_cave_rock",
+            "tent_detailedClosed",
+            "campfire_logs",
+            "plant_bushLarge",
+            "rock_largeA",
+            "statue_ring",
+            "sign"
         ]
     },
     "toolStates": [

@@ -36,9 +36,11 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Spawn readability: the rebuilt scene opens with an exploration camera looking down a grounded Blender route kit anchored to the Houdini heightmap.
 - Biome dressing: forest trees/deadwood, ruin columns, canyon boulders, cave torches, crystal clusters, and snow cairns are generated in Unity and snapped to the Houdini terrain.
 - Gameplay pass: `Gameplay_Explorable_1km_Level_Set` adds a spawn base camp, lowland bridge, cave worksite, ruin objective, canyon watchtower, collidable props, and visible objective beacons.
-- Nature scatter pass: `Nature_Mask_Guided_Scatter_1km` adds generated groves, lake reeds, river-bank vegetation, scree rocks, mossy stones, and deadwood over the heightmap.
+- Nature scatter pass: `Kenney_NatureKit_Real_Environment` places CC0 FBX trees, bridges, tents, cave pieces, crops, plants, stones, fences, campfires, and signs over the heightmap.
 - Exploration loop: `ExplorationObjectiveTracker` tracks five reachable sites with distance, direction feedback, and a runtime 1km mini-map in Play mode.
 - Navigation signage: `Navigation_Signage_1km_World_Readability` places eight physical signposts on the grounded route network.
+- Real architecture kit: `Kenney_Fantasy_Town_Real_Architecture` places CC0 FBX buildings, mills, stalls, roads, fountains, fences, walls, roofs, lanterns, and ruin pieces as explorable locations.
+- Placeholder cleanup: the large cube/cylinder camp, bridge, tower, and tent constructions are no longer called by the main build; gameplay objectives remain as invisible trigger volumes plus small model-based markers.
 - Overview verification: `World_Overview_Camera` is kept for whole-map captures and does not replace the playable camera.
 
 ## Blocking Items For Final Quality
