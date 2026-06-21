@@ -32,7 +32,8 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Foliage/details: 2 detail prototype(s), 256 detail resolution, 179031 mask-painted detail instance(s).
 - Cave terrain holes: 1 opening(s), 3249 hidden terrain hole pixel(s).
 - Mesh streaming: 19 stream cell(s), 19 LODGroup(s), 3 Houdini chunk cell(s), 7 CC0 kitbash cell(s), 9 Blender/reference cell(s).
-- Play mode view: `Player_Streaming_Camera` has `FreeFlyCameraController`; use the Game tab and Play to fly through the real Unity scene.
+- Play mode view: `Player_Explorer_Controller` has a `CharacterController` and `TerrainExplorerController`; use the Game tab and Play to walk the real Unity terrain.
+- Overview verification: `World_Overview_Camera` is kept for whole-map captures and does not replace the playable camera.
 
 ## Blocking Items For Final Quality
 
