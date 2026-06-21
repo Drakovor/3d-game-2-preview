@@ -27,6 +27,33 @@ const installNotes = [
   "World Machine: official FAQ says no native Mac build for stable current release."
 ];
 
+const mainRoute = [
+  [-290, -360],
+  [-165, -225],
+  [-40, -90],
+  [120, 20],
+  [100, 170],
+  [-60, 240],
+  [-225, 100],
+  [-280, -110],
+  [-290, -360]
+];
+
+const branchRoutes = [
+  [[-40, -90], [40, -210], [90, -330]],
+  [[120, 20], [215, 70], [290, 90]],
+  [[-60, 240], [70, 285], [190, 340]]
+];
+
+const worldZones = [
+  { name: "Spawn camp", center: [-290, -360], radius: [42, 32], color: "#e8c36a" },
+  { name: "Lowland lake", center: [-90, -140], radius: [120, 70], color: "#4da3c8" },
+  { name: "Ruins plateau", center: [35, 165], radius: [70, 46], color: "#b9b2a4" },
+  { name: "Canyon", center: [290, 90], radius: [70, 42], color: "#f28a3d" },
+  { name: "Forest rise", center: [-360, -230], radius: [92, 72], color: "#74b35f" },
+  { name: "Snow ridge", center: [335, 355], radius: [82, 72], color: "#dcecf1" }
+];
+
 const canvas = document.getElementById("map");
 const ctx = canvas.getContext("2d");
 const terrainCanvas = document.getElementById("terrain3d");
@@ -91,8 +118,60 @@ function project(position, frame) {
   };
 }
 
+function projectXZ(x, z, frame) {
+  return project([x, 0, z], frame);
+}
+
+function drawWorldZone(zone, frame) {
+  const p = projectXZ(zone.center[0], zone.center[1], frame);
+  const rx = (zone.radius[0] / 1000) * frame.size;
+  const ry = (zone.radius[1] / 1000) * frame.size;
+  ctx.save();
+  ctx.globalAlpha = 0.22;
+  ctx.fillStyle = zone.color;
+  ctx.beginPath();
+  ctx.ellipse(p.x, p.y, rx, ry, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = "#ece7f5";
+  ctx.font = "12px system-ui, sans-serif";
+  ctx.fillText(zone.name, p.x + rx + 6, p.y + 4);
+  ctx.restore();
+}
+
+function drawPolyline(points, frame, color, width) {
+  if (points.length < 2) return;
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = width;
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+  ctx.beginPath();
+  points.forEach(([x, z], index) => {
+    const p = projectXZ(x, z, frame);
+    if (index === 0) {
+      ctx.moveTo(p.x, p.y);
+    } else {
+      ctx.lineTo(p.x, p.y);
+    }
+  });
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawRouteNetwork(frame) {
+  worldZones.forEach((zone) => drawWorldZone(zone, frame));
+  drawPolyline(mainRoute, frame, "#d6a05a", 7);
+  drawPolyline(mainRoute, frame, "#3a2818", 3);
+  branchRoutes.forEach((route) => {
+    drawPolyline(route, frame, "#d6a05a", 5);
+    drawPolyline(route, frame, "#3a2818", 2);
+  });
+}
+
 function drawAssets(layout, houdiniAssets = []) {
   const frame = drawGrid();
+  drawRouteNetwork(frame);
   const assets = [...(layout?.meshAssets ?? []), ...houdiniAssets];
   assets.forEach((asset, index) => {
     const p = project(asset.position, frame);
