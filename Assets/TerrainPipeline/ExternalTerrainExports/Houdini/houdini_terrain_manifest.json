@@ -22,7 +22,9 @@
     "north snow ridge",
     "south-west forest rise",
     "ruins plateau",
+    "landmark plateaus flattened under grounded island meshes",
     "lake and river masks",
+    "secondary erosion gullies with flow and deposit masks",
     "folded ridge belts and basin rim masks for stronger explorable silhouettes"
   ],
   "note": "Mac-local Houdini heightfield export for a 1km explorable world. Unity imports these height, slope, flow, deposit and biome files instead of sculpting the terrain itself."

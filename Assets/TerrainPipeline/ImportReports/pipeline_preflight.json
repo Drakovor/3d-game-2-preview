@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T15:26:55Z",
+  "generatedAt": "2026-06-21T15:51:26Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "gates": [
     {
@@ -54,7 +54,7 @@
     {
       "name": "Unity integration scene",
       "state": "ready",
-      "summary": "Unity scene has 98 stream cell(s), 5 CC0 kitbash cell(s), 4 terrain layer(s), 4 terrain PBR set(s), 2 foliage detail type(s), 83531 mask-painted detail instance(s), 1 cave opening(s), 3249 terrain hole pixel(s), and terrain imported=True.",
+      "summary": "Unity scene has 98 stream cell(s), 5 CC0 kitbash cell(s), 4 terrain layer(s), 4 terrain PBR set(s), 2 foliage detail type(s), 85385 mask-painted detail instance(s), 1 cave opening(s), 3249 terrain hole pixel(s), and terrain imported=True.",
       "evidence": "Assets/Scenes/FantasyOpenWorld.unity; Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md; Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json",
       "nextAction": "Rebuild Unity after every external terrain, Houdini, ZBrush, or Substance export."
     }

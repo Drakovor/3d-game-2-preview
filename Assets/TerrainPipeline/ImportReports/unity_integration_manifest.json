@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T15:28:02.2663050Z",
+    "generatedAtUtc": "2026-06-21T15:51:36.3664370Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -43,10 +43,10 @@
             "Mud_Tuft_HoudiniFlow"
         ],
         "detailLayerInstanceCounts": [
-            80673,
-            2858
+            81566,
+            3819
         ],
-        "totalDetailInstances": 83531,
+        "totalDetailInstances": 85385,
         "holesResolution": 1024,
         "terrainHolePixelCount": 3249,
         "caveOpeningCount": 1,
@@ -163,6 +163,19 @@
             "Houdini_CliffWall_A_StreamCell"
         ],
         "missingFbx": []
+    },
+    "gameplayLayer": {
+        "sceneRoot": "Gameplay_Explorable_1km_Level_Set",
+        "landmarkCount": 5,
+        "objectiveBeaconCount": 5,
+        "collidableProps": true,
+        "landmarks": [
+            "Gameplay_Spawn_BaseCamp",
+            "Gameplay_Lowland_Bridge",
+            "Gameplay_Cave_Worksite",
+            "Gameplay_Ruin_Objective",
+            "Gameplay_Canyon_Watchtower"
+        ]
     },
     "toolStates": [
         {
