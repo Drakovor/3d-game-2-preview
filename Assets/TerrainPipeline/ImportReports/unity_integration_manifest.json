@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T12:49:48.7083980Z",
+    "generatedAtUtc": "2026-06-21T13:03:17.4705490Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 150.0,
@@ -49,20 +49,19 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 36,
-        "streamCellCount": 36,
-        "lodGroupCount": 36,
+        "totalSpecs": 38,
+        "streamCellCount": 38,
+        "lodGroupCount": 38,
         "houdiniCellCount": 0,
         "cc0MeshCellCount": 5,
-        "referenceCellCount": 31,
-        "meshColliderCount": 722,
+        "referenceCellCount": 33,
+        "meshColliderCount": 878,
         "streamCellNames": [
             "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_CaveApproach_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_SpawnTrail_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_SpawnTrail_B_StreamCell",
-            "Blender_RuinArch_SpawnGate_StreamCell",
             "Blender_RockCluster_SpawnLeft_StreamCell",
             "Blender_FallenLog_SpawnPath_A_StreamCell",
             "Blender_SpawnTrailBed_Start_StreamCell",
@@ -73,7 +72,6 @@
             "Blender_SpawnBoulderBank_Left_StreamCell",
             "Blender_SpawnBoulderBank_Right_StreamCell",
             "Blender_SpawnWaymarker_FirstFork_StreamCell",
-            "Blender_RuinArch_RuinsPlateau_StreamCell",
             "Blender_RockCluster_CanyonOverlook_StreamCell",
             "Blender_DeadPine_ForestApproach_StreamCell",
             "Blender_RouteTrailBed_SpawnApproach_StreamCell",
@@ -92,7 +90,11 @@
             "Blender_RouteReedBank_RiverRight_StreamCell",
             "Blender_RouteRuinRetainingWall_MidSlopeLeft_StreamCell",
             "Blender_RouteRuinRetainingWall_RuinsApproach_StreamCell",
-            "Blender_RouteRockBank_CanyonFork_StreamCell"
+            "Blender_RouteRockBank_CanyonFork_StreamCell",
+            "Blender_RouteStoneThreshold_SpawnGate_StreamCell",
+            "Blender_RouteCliffFace_SpawnRightEdge_StreamCell",
+            "Blender_RouteCliffFace_LowlandLeftEdge_StreamCell",
+            "Blender_RouteStoneThreshold_RuinsApproach_StreamCell"
         ],
         "missingFbx": []
     },
@@ -137,7 +139,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "85 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "91 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",

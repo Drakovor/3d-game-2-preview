@@ -1289,6 +1289,102 @@
       ],
       "streamDistance": 900,
       "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneThreshold_SpawnGate",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD2.fbx",
+      "position": [
+        -224,
+        0,
+        -270
+      ],
+      "rotation": [
+        0,
+        39,
+        0
+      ],
+      "scale": [
+        1.35,
+        1.35,
+        1.35
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteCliffFace_SpawnRightEdge",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD2.fbx",
+      "position": [
+        -192,
+        0,
+        -248
+      ],
+      "rotation": [
+        0,
+        -144,
+        0
+      ],
+      "scale": [
+        1.45,
+        1.45,
+        1.45
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteCliffFace_LowlandLeftEdge",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD2.fbx",
+      "position": [
+        -132,
+        0,
+        -188
+      ],
+      "rotation": [
+        0,
+        38,
+        0
+      ],
+      "scale": [
+        1.35,
+        1.35,
+        1.35
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneThreshold_RuinsApproach",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD2.fbx",
+      "position": [
+        48,
+        0,
+        126
+      ],
+      "rotation": [
+        0,
+        -8,
+        0
+      ],
+      "scale": [
+        1.55,
+        1.55,
+        1.55
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
     }
   ]
 }
