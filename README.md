@@ -11,6 +11,6 @@ Static GitHub Pages preview generated from the local Houdini + Blender + Unity p
 - Unity integration report: `Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md`
 - Unity integration manifest: `Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json`
 - WebGL terrain preview: `index.html`
-- Playable Unity WebGL build: `play/index.html`
+- Playable Unity WebGL build: `play/index.html` plus a cache-busting versioned `play-YYYYMMDD-HHMM/index.html` folder.
 
 The `/play/` folder is a real Unity WebGL export. The rest of the site previews exported terrain data, Houdini chunk geometry, and pipeline progress.
