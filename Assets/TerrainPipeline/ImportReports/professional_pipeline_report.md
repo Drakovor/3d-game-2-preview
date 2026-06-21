@@ -29,7 +29,7 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Manifest: `Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json`
 - Terrain: imported from `Assets/TerrainPipeline/ExternalTerrainExports/Houdini` at 1025 height resolution, 512 alphamap resolution, 4 terrain layers.
 - Terrain PBR textures: 4 CC0 terrain source set(s) assigned to terrain layers; manifest `Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/cc0_terrain_textures_manifest.json`.
-- Foliage/details: 2 detail prototype(s), 256 detail resolution, 166629 mask-painted detail instance(s).
+- Foliage/details: 2 detail prototype(s), 256 detail resolution, 142537 mask-painted detail instance(s).
 - Cave terrain holes: 1 opening(s), 3249 hidden terrain hole pixel(s).
 - Mesh streaming: 31 stream cell(s), 31 LODGroup(s), 3 Houdini chunk cell(s), 13 CC0 kitbash cell(s), 15 Blender/reference cell(s).
 - Play mode view: `Player_Explorer_Controller` has a `CharacterController` and `TerrainExplorerController`; use the Game tab and Play to walk the real Unity terrain.

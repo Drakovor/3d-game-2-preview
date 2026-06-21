@@ -166,6 +166,43 @@ canvas {
   line-height: 1.45;
 }
 
+.playable-panel {
+  border-color: color-mix(in srgb, var(--pistachio), #000 52%);
+}
+
+.play-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid color-mix(in srgb, var(--pistachio), #000 42%);
+  border-radius: 6px;
+  background: #172312;
+  color: var(--pistachio);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.play-link:hover {
+  background: #203018;
+}
+
+.playable-copy {
+  padding: 14px 18px 16px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.playable-copy p {
+  margin: 0 0 10px;
+}
+
+.playable-copy span {
+  color: var(--pistachio);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .capture-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

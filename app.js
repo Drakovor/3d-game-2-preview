@@ -7,6 +7,7 @@ const polyhavenPreviewMeshesPath = assetUrl("/Assets/Art/Environment/FloatingWor
 const preflightPath = assetUrl("/Assets/TerrainPipeline/ImportReports/pipeline_preflight.json");
 const unityManifestPath = assetUrl("/Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json");
 const houdiniHeightmapPath = assetUrl("/Assets/TerrainPipeline/ExternalTerrainExports/Houdini/base_height_1025.png");
+const webglBuildManifestPath = assetUrl("/play/build_manifest.json");
 
 const roles = [
   ["Houdini", "Active Mac terrain heightfield plus procedural cliffs, canyons, arches, cave mouths, overhangs."],
@@ -67,6 +68,7 @@ const houdiniStatus = document.getElementById("houdini-status");
 const meshStatus = document.getElementById("mesh-status");
 const unityStatus = document.getElementById("unity-status");
 const installStatus = document.getElementById("install-status");
+const webglBuildStatus = document.getElementById("webgl-build-status");
 
 function drawGrid() {
   const w = canvas.width;
@@ -346,6 +348,28 @@ async function renderUnityIntegrationStatus() {
   unityStatus.className = terrainReady && cells > 0 && layers > 0 && pbr > 0 && foliage > 0 && caves > 0 ? "status ready" : "status warning";
 }
 
+async function renderPlayableBuildStatus() {
+  if (!webglBuildStatus) {
+    return;
+  }
+
+  let data = null;
+  try {
+    const response = await fetch(webglBuildManifestPath, { cache: "no-store" });
+    data = response.ok ? await response.json() : null;
+  } catch {
+    data = null;
+  }
+
+  if (!data) {
+    webglBuildStatus.textContent = "Playable WebGL build: waiting for Unity export.";
+    return;
+  }
+
+  const mb = Number(data.totalSizeBytes || 0) / (1024 * 1024);
+  webglBuildStatus.textContent = `Playable WebGL build: ${data.unityBuildResult || "built"} · ${mb.toFixed(1)} MB · ${data.worldSizeMeters || 1000}m world.`;
+}
+
 function mat4Perspective(fovy, aspect, near, far) {
   const f = 1 / Math.tan(fovy / 2);
   const nf = 1 / (near - far);
@@ -466,15 +490,15 @@ function buildTerrainMesh(image) {
       const slope = Math.abs(heights[z * grid + xp] - heights[z * grid + xm]) + Math.abs(heights[zp * grid + x] - heights[zm * grid + x]);
       const px = (x / (grid - 1) - 0.5) * 6.5;
       const pz = (z / (grid - 1) - 0.5) * 6.5;
-      const py = h * 1.95 - 0.25;
+      const py = Math.max(0, h - 0.055) * 4.8 - 0.25;
       positions.push(px, py, pz);
 
       let color;
-      if (h > 0.76) {
+      if (h > 0.295) {
         color = [0.70, 0.76, 0.80];
-      } else if (slope > 0.11 || h > 0.58) {
+      } else if (slope > 0.030 || h > 0.238) {
         color = [0.32, 0.31, 0.29];
-      } else if (h < 0.22) {
+      } else if (h < 0.132) {
         color = [0.20, 0.15, 0.10];
       } else {
         color = [0.16, 0.31, 0.16];
@@ -513,7 +537,7 @@ function previewZ(worldZ) {
 }
 
 function previewY(worldY) {
-  return (worldY / 180) * 1.95 - 0.25;
+  return (worldY / 150) * 1.95 - 0.25;
 }
 
 function sampleTerrainHeight(mesh, worldX, worldZ) {
@@ -533,7 +557,7 @@ function sampleTerrainHeight(mesh, worldX, worldZ) {
   const h11 = mesh.heights[z1 * mesh.grid + x1];
   const h0 = h00 * (1 - tx) + h10 * tx;
   const h1 = h01 * (1 - tx) + h11 * tx;
-  return ((h0 * (1 - tz) + h1 * tz) * 1.95) - 0.25;
+  return Math.max(0, (h0 * (1 - tz) + h1 * tz) - 0.055) * 4.8 - 0.25;
 }
 
 function addBox(target, center, size, color) {
@@ -833,6 +857,7 @@ async function main() {
   await renderToolStatus(houdiniAssets.length);
   await renderPreflight();
   await renderUnityIntegrationStatus();
+  await renderPlayableBuildStatus();
   await initTerrain3d(houdiniAssets, previewMeshes, previewLabel);
 }
 

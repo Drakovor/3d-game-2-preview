@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T10:22:08.0555380Z",
+    "generatedAtUtc": "2026-06-21T11:08:16.1864730Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 150.0,
@@ -43,10 +43,10 @@
             "Mud_Tuft_HoudiniFlow"
         ],
         "detailLayerInstanceCounts": [
-            157841,
-            8788
+            133480,
+            9057
         ],
-        "totalDetailInstances": 166629,
+        "totalDetailInstances": 142537,
         "holesResolution": 1024,
         "terrainHolePixelCount": 3249,
         "caveOpeningCount": 1,
