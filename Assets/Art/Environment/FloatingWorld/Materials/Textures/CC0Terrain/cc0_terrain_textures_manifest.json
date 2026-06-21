@@ -2,7 +2,7 @@
   "source": "ambientCG",
   "license": "Creative Commons CC0 1.0 Universal",
   "resolution": "1K-JPG",
-  "usage": "Unity terrain layer PBR source maps for the professional open world prototype.",
+  "usage": "Unity terrain layer PBR source maps for the professional open world production map.",
   "assets": [
     {
       "terrainLayer": "Moss_Dark",
