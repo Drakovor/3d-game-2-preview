@@ -40,8 +40,9 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Exploration loop: `ExplorationObjectiveTracker` tracks five reachable sites with distance, direction feedback, and a runtime 1km mini-map in Play mode.
 - Navigation signage: `Navigation_Signage_1km_World_Readability` places eight physical signposts on the grounded route network.
 - Real architecture kit: `Kenney_Fantasy_Town_Real_Architecture` places CC0 FBX buildings, mills, stalls, roads, fountains, fences, walls, roofs, lanterns, and ruin pieces as explorable locations.
+- Runtime world-map mode: `Runtime_WorldMap_Camera_Director` opens WebGL in the whole-map dark-fantasy overview until the player chooses to enter the explorable camera, and supports toggling back to the map.
 - Placeholder cleanup: the large cube/cylinder camp, bridge, tower, and tent constructions are no longer called by the main build; gameplay objectives remain as invisible trigger volumes plus small model-based markers.
-- Overview verification: `World_Overview_Camera` is kept for whole-map captures and does not replace the playable camera.
+- Overview verification: `World_Overview_Camera` is kept for whole-map captures and runtime map mode while `Player_Exploration_Camera` remains the ground exploration camera.
 
 ## Blocking Items For Final Quality
 
