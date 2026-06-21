@@ -22,6 +22,12 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - 20% Terrain heightmap: broad ground, plains, soft valleys, vegetation paint, simple physics.
 - 80% Static/procedural meshes: floating islands, cliffs, arches, caves, canyons, vertical silhouettes, hero mountains.
 
+## Unity Integration Evidence
+
+- Manifest: `Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json`
+- Terrain: imported from `Assets/TerrainPipeline/ExternalTerrainExports/Houdini` at 1025 height resolution, 512 alphamap resolution, 4 terrain layers.
+- Mesh streaming: 12 stream cell(s), 12 LODGroup(s), 3 Houdini chunk cell(s), 9 Blender/reference cell(s).
+
 ## Blocking Items For Final Quality
 
 - No blocking required-tool export is missing.

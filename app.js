@@ -4,6 +4,7 @@ const layoutPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/worl
 const houdiniGeneratedPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/houdini_generated_assets.json");
 const houdiniPreviewMeshesPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/houdini_preview_meshes.json");
 const preflightPath = assetUrl("/Assets/TerrainPipeline/ImportReports/pipeline_preflight.json");
+const unityManifestPath = assetUrl("/Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json");
 const houdiniHeightmapPath = assetUrl("/Assets/TerrainPipeline/ExternalTerrainExports/Houdini/base_height_1025.png");
 
 const roles = [
@@ -34,6 +35,7 @@ const roleList = document.getElementById("role-list");
 const terrainStatus = document.getElementById("terrain-status");
 const houdiniStatus = document.getElementById("houdini-status");
 const meshStatus = document.getElementById("mesh-status");
+const unityStatus = document.getElementById("unity-status");
 const installStatus = document.getElementById("install-status");
 
 function drawGrid() {
@@ -232,6 +234,30 @@ async function renderPreflight() {
       <span>${gate.nextAction}</span>
     </div>
   `).join("");
+}
+
+async function renderUnityIntegrationStatus() {
+  let data = null;
+  try {
+    const response = await fetch(unityManifestPath, { cache: "no-store" });
+    data = response.ok ? await response.json() : null;
+  } catch {
+    data = null;
+  }
+
+  if (!data) {
+    unityStatus.textContent = "Unity integration: manifest waiting";
+    unityStatus.className = "status warning";
+    return;
+  }
+
+  const terrain = data.terrain || {};
+  const mesh = data.meshStreaming || {};
+  const terrainReady = Boolean(terrain.imported);
+  const cells = Number(mesh.streamCellCount || 0);
+  const layers = Number(terrain.terrainLayerCount || 0);
+  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${layers} terrain layer(s) · terrain ${terrainReady ? "imported" : "waiting"}`;
+  unityStatus.className = terrainReady && cells > 0 && layers > 0 ? "status ready" : "status warning";
 }
 
 function mat4Perspective(fovy, aspect, near, far) {
@@ -704,6 +730,7 @@ async function main() {
   await renderTerrainStatus();
   await renderToolStatus(houdiniAssets.length);
   await renderPreflight();
+  await renderUnityIntegrationStatus();
   await initTerrain3d(houdiniAssets, houdiniPreviewMeshes);
 }
 

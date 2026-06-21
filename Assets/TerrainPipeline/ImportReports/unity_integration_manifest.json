@@ -1,0 +1,111 @@
+{
+    "generatedAtUtc": "2026-06-21T07:37:01.0338460Z",
+    "scene": "Assets/Scenes/FantasyOpenWorld.unity",
+    "worldSizeMeters": 1000.0,
+    "terrainHeightMeters": 180.0,
+    "activeTerrainRoot": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini",
+    "terrain": {
+        "imported": true,
+        "sourceRoot": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini",
+        "sceneObject": "BaseTerrain_from_Houdini",
+        "terrainAsset": "Assets/TerrainPipeline/Generated/BaseTerrain_Houdini.asset",
+        "heightmap": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/base_height_1025.png",
+        "heightmapResolution": 1025,
+        "alphamapResolution": 512,
+        "baseMapResolution": 1024,
+        "worldSizeMeters": 1000.0,
+        "heightMeters": 180.0,
+        "terrainLayerCount": 4,
+        "terrainLayers": [
+            "Moss_Dark",
+            "Slope_BlackRock",
+            "Flow_Mud",
+            "Altitude_SnowCrystal"
+        ],
+        "maskFiles": [
+            "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_slope.png",
+            "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_flow.png",
+            "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_deposit.png",
+            "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_biome_rgba.png"
+        ]
+    },
+    "meshStreaming": {
+        "totalSpecs": 12,
+        "streamCellCount": 12,
+        "lodGroupCount": 12,
+        "houdiniCellCount": 3,
+        "referenceCellCount": 9,
+        "meshColliderCount": 12,
+        "streamCellNames": [
+            "FloatingIsland_Forest_StreamCell",
+            "FloatingIsland_Ruins_StreamCell",
+            "FloatingIsland_Volcano_StreamCell",
+            "FloatingIsland_Crystal_StreamCell",
+            "FloatingIsland_Snow_StreamCell",
+            "CliffWall_A_StreamCell",
+            "CanyonSegment_A_StreamCell",
+            "RockSpire_A_StreamCell",
+            "CaveEntrance_A_StreamCell",
+            "Houdini_CanyonSegment_A_StreamCell",
+            "Houdini_CaveEntrance_A_StreamCell",
+            "Houdini_CliffWall_A_StreamCell"
+        ],
+        "missingFbx": []
+    },
+    "toolStates": [
+        {
+            "tool": "Houdini Heightfield",
+            "state": "Ready",
+            "role": "Mac-local procedural terrain heightfield: heightmap, slope, flow, deposit and biome masks.",
+            "details": "All required terrain outputs are present."
+        },
+        {
+            "tool": "Gaea",
+            "state": "Waiting",
+            "role": "Optional future terrain sculpture when available off this Mac: erosion, heightmap, slope/flow/deposit/snow masks.",
+            "details": "Missing: base_height_1025.png, mask_slope.png, mask_flow.png, mask_biome_rgba.png."
+        },
+        {
+            "tool": "World Creator",
+            "state": "Waiting",
+            "role": "Optional future terrain iteration and splat/heat maps when available.",
+            "details": "Missing: base_height_1025.png, mask_slope.png, mask_flow.png, mask_biome_rgba.png."
+        },
+        {
+            "tool": "World Machine",
+            "state": "Waiting",
+            "role": "Optional future/off-Mac large-world procedural terrain builds and deterministic batch exports.",
+            "details": "Missing: base_height_1025.png, mask_slope.png, mask_flow.png, mask_biome_rgba.png."
+        },
+        {
+            "tool": "Houdini",
+            "state": "Ready",
+            "role": "AAA procedural mesh chunks: cliffs, canyons, arches, cave entrances, terrain variants.",
+            "details": "3 generated Houdini LOD0 FBX chunk(s), 2 HIP source file(s), and metadata found."
+        },
+        {
+            "tool": "ZBrush",
+            "state": "Waiting",
+            "role": "High-detail sculpt pass for hero rocks, cave lips, cliff faces, and unique silhouettes.",
+            "details": "No source meshes found yet for this tool role."
+        },
+        {
+            "tool": "Blender",
+            "state": "Ready",
+            "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
+            "details": "19 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+        },
+        {
+            "tool": "Substance Painter",
+            "state": "Waiting",
+            "role": "PBR texturing for 3D hero meshes: BaseColor, Normal, MaskMap.",
+            "details": "No complete PBR texture set found yet."
+        },
+        {
+            "tool": "Unity",
+            "state": "Ready",
+            "role": "Integration only: Terrain, static meshes, LODGroups, colliders, streaming cells, occlusion flags.",
+            "details": "Unity project structure is present; builder can assemble valid external exports."
+        }
+    ]
+}

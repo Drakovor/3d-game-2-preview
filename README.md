@@ -6,6 +6,7 @@ Static GitHub Pages preview generated from the local Houdini + Blender + Unity p
 - Houdini procedural chunks metadata: `Assets/Art/Environment/FloatingWorld/Metadata/houdini_generated_assets.json`
 - Houdini WebGL mesh preview data: `Assets/Art/Environment/FloatingWorld/Metadata/houdini_preview_meshes.json`
 - Unity integration report: `Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md`
+- Unity integration manifest: `Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json`
 - WebGL terrain preview: `index.html`
 
 Unity is not running on GitHub Pages; this site previews the exported terrain data, Houdini chunk geometry, and pipeline progress.
