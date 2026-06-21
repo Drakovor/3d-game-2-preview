@@ -619,6 +619,198 @@
       "collider": "mesh"
     },
     {
+      "name": "Blender_SpawnTrailBed_Start",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnTrailBed_A_LOD2.fbx",
+      "position": [
+        -276,
+        0,
+        -334
+      ],
+      "rotation": [
+        0,
+        34,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnTrailBed_Mid",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnTrailBed_A_LOD2.fbx",
+      "position": [
+        -246,
+        0,
+        -298
+      ],
+      "rotation": [
+        0,
+        38,
+        0
+      ],
+      "scale": [
+        0.96,
+        0.96,
+        0.96
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnRetainingWall_LeftStart",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRetainingWall_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRetainingWall_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRetainingWall_A_LOD2.fbx",
+      "position": [
+        -286,
+        0,
+        -318
+      ],
+      "rotation": [
+        0,
+        36,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnRetainingWall_RightMid",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRetainingWall_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRetainingWall_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRetainingWall_A_LOD2.fbx",
+      "position": [
+        -232,
+        0,
+        -284
+      ],
+      "rotation": [
+        0,
+        -144,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnRootArch_PathFrame",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRootArch_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRootArch_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnRootArch_A_LOD2.fbx",
+      "position": [
+        -218,
+        0,
+        -264
+      ],
+      "rotation": [
+        0,
+        34,
+        0
+      ],
+      "scale": [
+        1.45,
+        1.45,
+        1.45
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnBoulderBank_Left",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnBoulderBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnBoulderBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnBoulderBank_A_LOD2.fbx",
+      "position": [
+        -298,
+        0,
+        -328
+      ],
+      "rotation": [
+        0,
+        28,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnBoulderBank_Right",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnBoulderBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnBoulderBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnBoulderBank_A_LOD2.fbx",
+      "position": [
+        -238,
+        0,
+        -306
+      ],
+      "rotation": [
+        0,
+        -148,
+        0
+      ],
+      "scale": [
+        1.15,
+        1.15,
+        1.15
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_SpawnWaymarker_FirstFork",
+      "biome": "Blender Close Spawn Path Kit",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnWaymarker_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnWaymarker_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_SpawnWaymarker_A_LOD2.fbx",
+      "position": [
+        -248,
+        0,
+        -300
+      ],
+      "rotation": [
+        0,
+        56,
+        0
+      ],
+      "scale": [
+        1.35,
+        1.35,
+        1.35
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
       "name": "Blender_RuinArch_RuinsPlateau",
       "biome": "Blender Exploration Ruins Landmark",
       "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD0.fbx",

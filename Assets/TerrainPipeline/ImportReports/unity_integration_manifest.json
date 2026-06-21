@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T11:30:51.1511290Z",
+    "generatedAtUtc": "2026-06-21T11:56:55.3917570Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 150.0,
@@ -55,13 +55,13 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 31,
-        "streamCellCount": 31,
-        "lodGroupCount": 31,
+        "totalSpecs": 39,
+        "streamCellCount": 39,
+        "lodGroupCount": 39,
         "houdiniCellCount": 3,
         "cc0MeshCellCount": 13,
-        "referenceCellCount": 15,
-        "meshColliderCount": 70,
+        "referenceCellCount": 23,
+        "meshColliderCount": 281,
         "streamCellNames": [
             "GroundedIsland_Forest_StreamCell",
             "GroundedIsland_Ruins_StreamCell",
@@ -88,6 +88,14 @@
             "Blender_RuinArch_SpawnGate_StreamCell",
             "Blender_RockCluster_SpawnLeft_StreamCell",
             "Blender_FallenLog_SpawnPath_A_StreamCell",
+            "Blender_SpawnTrailBed_Start_StreamCell",
+            "Blender_SpawnTrailBed_Mid_StreamCell",
+            "Blender_SpawnRetainingWall_LeftStart_StreamCell",
+            "Blender_SpawnRetainingWall_RightMid_StreamCell",
+            "Blender_SpawnRootArch_PathFrame_StreamCell",
+            "Blender_SpawnBoulderBank_Left_StreamCell",
+            "Blender_SpawnBoulderBank_Right_StreamCell",
+            "Blender_SpawnWaymarker_FirstFork_StreamCell",
             "Blender_RuinArch_RuinsPlateau_StreamCell",
             "Blender_RockCluster_CanyonOverlook_StreamCell",
             "Blender_DeadPine_ForestApproach_StreamCell",
@@ -138,7 +146,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "46 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "61 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",
