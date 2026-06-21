@@ -633,8 +633,8 @@ async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
   }, { passive: false });
 
   terrain3dStatus.textContent = houdiniPreviewMeshes.length > 0
-    ? `Terrain + ${houdiniPreviewMeshes.length} vrais mesh(es) Houdini · drag to orbit · wheel to zoom`
-    : `Terrain + ${houdiniAssets.length} Houdini chunk proxy/proxies · drag to orbit · wheel to zoom`;
+    ? `WebGL tech preview · ${houdiniPreviewMeshes.length} real Houdini mesh(es)`
+    : `WebGL tech preview · ${houdiniAssets.length} Houdini proxy chunk(s)`;
 
   function resize() {
     const rect = terrainCanvas.getBoundingClientRect();

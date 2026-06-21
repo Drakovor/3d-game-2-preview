@@ -10,10 +10,10 @@
     <main class="shell">
       <section class="hero">
         <div>
-          <p class="eyebrow">Local Progress Preview</p>
+          <p class="eyebrow">GitHub Progress Preview</p>
           <h1>1 km x 1 km Open World Pipeline</h1>
           <p class="summary">
-            Houdini is the active Mac terrain source. Unity is integration only; Blender stays for reference/blockout and cleanup.
+            This browser page is a lightweight technical preview of exported data. The final playable map is built in Unity from Houdini terrain, masks, procedural chunks, materials, foliage, and kitbashed 3D assets.
           </p>
         </div>
         <div class="status-stack">
@@ -27,12 +27,16 @@
       <section class="asset-panel">
         <div class="panel-head">
           <div>
-            <p class="eyebrow">Houdini Terrain</p>
-            <h2>3D Local Preview</h2>
+            <p class="eyebrow">Houdini Technical Terrain</p>
+            <h2>3D GitHub Preview</h2>
           </div>
           <div class="scale" id="terrain3d-status">Loading heightmap...</div>
         </div>
         <canvas id="terrain3d" class="terrain3d" width="1280" height="720" aria-label="3D Houdini terrain preview"></canvas>
+        <div class="preview-note">
+          <strong>Not the final game render.</strong>
+          <span>This WebGL view proves the current Houdini heightmap and chunk geometry are published. Unity will add the real terrain material, masks, vegetation, lighting, colliders, streaming cells, caves, and placed asset kits.</span>
+        </div>
       </section>
 
       <section class="preview-grid">
@@ -89,6 +93,6 @@
       </section>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./app.js?v=houdini-webgl-mesh-preview"></script>
   </body>
 </html>
