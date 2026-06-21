@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T15:51:36.3664370Z",
+    "generatedAtUtc": "2026-06-21T16:05:17.9664020Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -175,6 +175,20 @@
             "Gameplay_Cave_Worksite",
             "Gameplay_Ruin_Objective",
             "Gameplay_Canyon_Watchtower"
+        ]
+    },
+    "natureLayer": {
+        "sceneRoot": "Nature_Mask_Guided_Scatter_1km",
+        "groveCount": 6,
+        "shorelineScatterZones": 2,
+        "riverScatterSamples": 48,
+        "rockyEdgeBands": 8,
+        "generatedSystems": [
+            "forest groves",
+            "lake reeds",
+            "river bank vegetation",
+            "scree and mossy rock bands",
+            "fallen deadwood and brush"
         ]
     },
     "toolStates": [
