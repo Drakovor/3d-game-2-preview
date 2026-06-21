@@ -1,8 +1,8 @@
 {
-    "generatedAtUtc": "2026-06-21T09:16:46.1555420Z",
+    "generatedAtUtc": "2026-06-21T09:49:47.3109920Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
-    "terrainHeightMeters": 180.0,
+    "terrainHeightMeters": 150.0,
     "activeTerrainRoot": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini",
     "terrain": {
         "imported": true,
@@ -14,7 +14,7 @@
         "alphamapResolution": 512,
         "baseMapResolution": 1024,
         "worldSizeMeters": 1000.0,
-        "heightMeters": 180.0,
+        "heightMeters": 150.0,
         "terrainLayerCount": 4,
         "terrainLayers": [
             "Moss_Dark",
@@ -43,10 +43,10 @@
             "Mud_Tuft_HoudiniFlow"
         ],
         "detailLayerInstanceCounts": [
-            170672,
-            8359
+            157841,
+            8788
         ],
-        "totalDetailInstances": 179031,
+        "totalDetailInstances": 166629,
         "holesResolution": 1024,
         "terrainHolePixelCount": 3249,
         "caveOpeningCount": 1,
@@ -55,13 +55,13 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 19,
-        "streamCellCount": 19,
-        "lodGroupCount": 19,
+        "totalSpecs": 31,
+        "streamCellCount": 31,
+        "lodGroupCount": 31,
         "houdiniCellCount": 3,
-        "cc0MeshCellCount": 7,
-        "referenceCellCount": 9,
-        "meshColliderCount": 24,
+        "cc0MeshCellCount": 13,
+        "referenceCellCount": 15,
+        "meshColliderCount": 70,
         "streamCellNames": [
             "GroundedIsland_Forest_StreamCell",
             "GroundedIsland_Ruins_StreamCell",
@@ -79,6 +79,18 @@
             "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_CaveApproach_A_StreamCell",
+            "PolyHaven_RockFace02_SpawnTrail_Left_StreamCell",
+            "PolyHaven_RockFace02_SpawnTrail_Right_StreamCell",
+            "PolyHaven_RockFace02_ForestRidge_Approach_StreamCell",
+            "PolyHaven_DeadTreeTrunk_SpawnTrail_A_StreamCell",
+            "PolyHaven_DeadTreeTrunk_SpawnTrail_B_StreamCell",
+            "PolyHaven_RockFace02_LowlandCrossing_A_StreamCell",
+            "Blender_RuinArch_SpawnGate_StreamCell",
+            "Blender_RockCluster_SpawnLeft_StreamCell",
+            "Blender_FallenLog_SpawnPath_A_StreamCell",
+            "Blender_RuinArch_RuinsPlateau_StreamCell",
+            "Blender_RockCluster_CanyonOverlook_StreamCell",
+            "Blender_DeadPine_ForestApproach_StreamCell",
             "Houdini_CanyonSegment_A_StreamCell",
             "Houdini_CaveEntrance_A_StreamCell",
             "Houdini_CliffWall_A_StreamCell"
@@ -126,7 +138,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "34 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "46 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",

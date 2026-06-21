@@ -7,7 +7,7 @@
     "heightmapTerrainRatio": 0.2,
     "terrainSize": [
       1000.0,
-      180.0,
+      150.0,
       1000.0
     ]
   },
@@ -400,6 +400,294 @@
         2.8
       ],
       "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_SpawnTrail_Left",
+      "biome": "CC0 Spawn Landmark Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        -252,
+        0,
+        -306
+      ],
+      "rotation": [
+        0,
+        38,
+        0
+      ],
+      "scale": [
+        6.8,
+        5.2,
+        4.8
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_SpawnTrail_Right",
+      "biome": "CC0 Spawn Landmark Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        -214,
+        0,
+        -282
+      ],
+      "rotation": [
+        0,
+        -128,
+        0
+      ],
+      "scale": [
+        5.7,
+        4.7,
+        4.4
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_ForestRidge_Approach",
+      "biome": "CC0 Forest Ridge Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        -335,
+        0,
+        -246
+      ],
+      "rotation": [
+        0,
+        74,
+        0
+      ],
+      "scale": [
+        7.8,
+        5.8,
+        5.6
+      ],
+      "streamDistance": 980,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_DeadTreeTrunk_SpawnTrail_A",
+      "biome": "CC0 Forest Deadwood Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
+      "position": [
+        -338,
+        0,
+        -242
+      ],
+      "rotation": [
+        0,
+        64,
+        0
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "streamDistance": 720,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_DeadTreeTrunk_SpawnTrail_B",
+      "biome": "CC0 Forest Deadwood Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
+      "position": [
+        -354,
+        0,
+        -264
+      ],
+      "rotation": [
+        0,
+        -35,
+        0
+      ],
+      "scale": [
+        2.2,
+        2.2,
+        2.2
+      ],
+      "streamDistance": 720,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_LowlandCrossing_A",
+      "biome": "CC0 Lowland Crossing Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        -138,
+        0,
+        -178
+      ],
+      "rotation": [
+        0,
+        112,
+        0
+      ],
+      "scale": [
+        5.8,
+        4.8,
+        4.2
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RuinArch_SpawnGate",
+      "biome": "Blender Exploration Spawn Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD2.fbx",
+      "position": [
+        -226,
+        0,
+        -270
+      ],
+      "rotation": [
+        0,
+        28,
+        0
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "streamDistance": 1050,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RockCluster_SpawnLeft",
+      "biome": "Blender Exploration Spawn Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RockCluster_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RockCluster_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RockCluster_A_LOD2.fbx",
+      "position": [
+        -214,
+        0,
+        -292
+      ],
+      "rotation": [
+        0,
+        28,
+        0
+      ],
+      "scale": [
+        1.15,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_FallenLog_SpawnPath_A",
+      "biome": "Blender Exploration Spawn Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_FallenLog_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_FallenLog_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_FallenLog_A_LOD2.fbx",
+      "position": [
+        -238,
+        0,
+        -324
+      ],
+      "rotation": [
+        0,
+        22,
+        0
+      ],
+      "scale": [
+        1.05,
+        1.05,
+        1.05
+      ],
+      "streamDistance": 720,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RuinArch_RuinsPlateau",
+      "biome": "Blender Exploration Ruins Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RuinArch_A_LOD2.fbx",
+      "position": [
+        38,
+        0,
+        155
+      ],
+      "rotation": [
+        0,
+        -12,
+        0
+      ],
+      "scale": [
+        2.2,
+        2.2,
+        2.2
+      ],
+      "streamDistance": 1050,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RockCluster_CanyonOverlook",
+      "biome": "Blender Exploration Canyon Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RockCluster_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RockCluster_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RockCluster_A_LOD2.fbx",
+      "position": [
+        276,
+        0,
+        84
+      ],
+      "rotation": [
+        0,
+        74,
+        0
+      ],
+      "scale": [
+        2.8,
+        2.3,
+        2.2
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_DeadPine_ForestApproach",
+      "biome": "Blender Exploration Forest Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadPine_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadPine_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadPine_A_LOD2.fbx",
+      "position": [
+        -342,
+        0,
+        -238
+      ],
+      "rotation": [
+        0,
+        58,
+        0
+      ],
+      "scale": [
+        1.95,
+        1.95,
+        1.95
+      ],
+      "streamDistance": 900,
       "collider": "mesh"
     }
   ]
