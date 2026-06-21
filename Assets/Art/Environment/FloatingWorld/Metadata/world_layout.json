@@ -1073,6 +1073,222 @@
       ],
       "streamDistance": 850,
       "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_SpawnLeft",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        -236,
+        0,
+        -292
+      ],
+      "rotation": [
+        0,
+        36,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_SpawnRight",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        -196,
+        0,
+        -252
+      ],
+      "rotation": [
+        0,
+        -146,
+        0
+      ],
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteDeadwoodTangle_ForestEdgeA",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD2.fbx",
+      "position": [
+        -300,
+        0,
+        -238
+      ],
+      "rotation": [
+        0,
+        68,
+        0
+      ],
+      "scale": [
+        1.55,
+        1.55,
+        1.55
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteDeadwoodTangle_LowlandEdge",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD2.fbx",
+      "position": [
+        -106,
+        0,
+        -150
+      ],
+      "rotation": [
+        0,
+        -34,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteReedBank_RiverLeft",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteReedBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteReedBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteReedBank_A_LOD2.fbx",
+      "position": [
+        -144,
+        0,
+        -186
+      ],
+      "rotation": [
+        0,
+        39,
+        0
+      ],
+      "scale": [
+        1.35,
+        1.35,
+        1.35
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteReedBank_RiverRight",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteReedBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteReedBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteReedBank_A_LOD2.fbx",
+      "position": [
+        -112,
+        0,
+        -162
+      ],
+      "rotation": [
+        0,
+        -141,
+        0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRuinRetainingWall_MidSlopeLeft",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRuinRetainingWall_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRuinRetainingWall_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRuinRetainingWall_A_LOD2.fbx",
+      "position": [
+        -26,
+        0,
+        -68
+      ],
+      "rotation": [
+        0,
+        48,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRuinRetainingWall_RuinsApproach",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRuinRetainingWall_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRuinRetainingWall_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRuinRetainingWall_A_LOD2.fbx",
+      "position": [
+        36,
+        0,
+        118
+      ],
+      "rotation": [
+        0,
+        -10,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_CanyonFork",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        122,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        88,
+        0
+      ],
+      "scale": [
+        1.4,
+        1.4,
+        1.4
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
     }
   ]
 }
