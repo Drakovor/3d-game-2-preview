@@ -1,0 +1,60 @@
+{
+  "source": "ambientCG",
+  "license": "Creative Commons CC0 1.0 Universal",
+  "resolution": "1K-JPG",
+  "usage": "Unity terrain layer PBR source maps for the professional open world prototype.",
+  "assets": [
+    {
+      "terrainLayer": "Moss_Dark",
+      "assetId": "Ground068",
+      "displayName": "Ground 068",
+      "sourceUrl": "https://ambientcg.com/a/Ground068",
+      "maps": {
+        "BaseColor": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Moss_Dark/Moss_Dark_BaseColor.jpg",
+        "Normal": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Moss_Dark/Moss_Dark_Normal.jpg",
+        "AO": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Moss_Dark/Moss_Dark_AO.jpg",
+        "Roughness": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Moss_Dark/Moss_Dark_Roughness.jpg",
+        "Height": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Moss_Dark/Moss_Dark_Height.jpg"
+      }
+    },
+    {
+      "terrainLayer": "Slope_BlackRock",
+      "assetId": "Rock063",
+      "displayName": "Rock 063",
+      "sourceUrl": "https://ambientcg.com/a/Rock063",
+      "maps": {
+        "BaseColor": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Slope_BlackRock/Slope_BlackRock_BaseColor.jpg",
+        "Normal": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Slope_BlackRock/Slope_BlackRock_Normal.jpg",
+        "AO": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Slope_BlackRock/Slope_BlackRock_AO.jpg",
+        "Roughness": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Slope_BlackRock/Slope_BlackRock_Roughness.jpg",
+        "Height": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Slope_BlackRock/Slope_BlackRock_Height.jpg"
+      }
+    },
+    {
+      "terrainLayer": "Flow_Mud",
+      "assetId": "Ground092C",
+      "displayName": "Ground 092 C",
+      "sourceUrl": "https://ambientcg.com/a/Ground092C",
+      "maps": {
+        "BaseColor": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Flow_Mud/Flow_Mud_BaseColor.jpg",
+        "Normal": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Flow_Mud/Flow_Mud_Normal.jpg",
+        "AO": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Flow_Mud/Flow_Mud_AO.jpg",
+        "Roughness": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Flow_Mud/Flow_Mud_Roughness.jpg",
+        "Height": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Flow_Mud/Flow_Mud_Height.jpg"
+      }
+    },
+    {
+      "terrainLayer": "Altitude_SnowCrystal",
+      "assetId": "Snow010A",
+      "displayName": "Snow 010 A",
+      "sourceUrl": "https://ambientcg.com/a/Snow010A",
+      "maps": {
+        "BaseColor": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Altitude_SnowCrystal/Altitude_SnowCrystal_BaseColor.jpg",
+        "Normal": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Altitude_SnowCrystal/Altitude_SnowCrystal_Normal.jpg",
+        "AO": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Altitude_SnowCrystal/Altitude_SnowCrystal_AO.jpg",
+        "Roughness": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Altitude_SnowCrystal/Altitude_SnowCrystal_Roughness.jpg",
+        "Height": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/Altitude_SnowCrystal/Altitude_SnowCrystal_Height.jpg"
+      }
+    }
+  ]
+}

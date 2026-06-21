@@ -14,6 +14,7 @@ const roles = [
   ["World Machine", "Future/off-Mac deterministic large-world terrain build option."],
   ["ZBrush", "Hero sculpt detail and high-poly rock/ruin surfaces."],
   ["Blender", "Blockout, kitbash, pivot cleanup, local reference mesh chunks."],
+  ["ambientCG CC0", "Free terrain PBR fallback: moss, cliff rock, mud flow, and snow source maps."],
   ["Substance Painter", "PBR BaseColor, Normal, MaskMap for mesh assets."],
   ["Unity", "Integration, Terrain import, LODGroups, colliders, streaming cells."]
 ];
@@ -256,9 +257,11 @@ async function renderUnityIntegrationStatus() {
   const terrainReady = Boolean(terrain.imported);
   const cells = Number(mesh.streamCellCount || 0);
   const layers = Number(terrain.terrainLayerCount || 0);
+  const pbr = Number(terrain.terrainPbrTextureSetCount || 0);
   const foliage = Number(terrain.totalDetailInstances || 0);
-  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${layers} terrain layer(s) · ${foliage} foliage detail(s)`;
-  unityStatus.className = terrainReady && cells > 0 && layers > 0 && foliage > 0 ? "status ready" : "status warning";
+  const caves = Number(terrain.caveOpeningCount || 0);
+  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${layers} terrain layer(s) · ${pbr} PBR terrain set(s) · ${foliage} foliage detail(s) · ${caves} cave hole(s)`;
+  unityStatus.className = terrainReady && cells > 0 && layers > 0 && pbr > 0 && foliage > 0 && caves > 0 ? "status ready" : "status warning";
 }
 
 function mat4Perspective(fovy, aspect, near, far) {

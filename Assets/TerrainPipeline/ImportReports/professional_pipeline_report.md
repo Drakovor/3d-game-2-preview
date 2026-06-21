@@ -15,6 +15,7 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 | ZBrush | Waiting | High-detail sculpt pass for hero rocks, cave lips, cliff faces, and unique silhouettes. | `Assets/Art/Environment/FloatingWorld/ZBrush` | No source meshes found yet for this tool role. |
 | Blender | Ready | Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed. | `Tools/FantasyWorldPipeline/blender` | 19 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes. |
 | Substance Painter | Waiting | PBR texturing for 3D hero meshes: BaseColor, Normal, MaskMap. | `Assets/Art/Environment/FloatingWorld/Materials/Textures/Substance` | No complete PBR texture set found yet. |
+| ambientCG CC0 Terrain Textures | Ready | Free professional terrain PBR fallback while paid/unavailable texturing tools are missing: BaseColor, Normal, AO, Roughness, Height. | `Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain` | 4 complete CC0 terrain PBR source set(s) found; Unity generates mask maps from AO/Roughness/Height. |
 | Unity | Ready | Integration only: Terrain, static meshes, LODGroups, colliders, streaming cells, occlusion flags. | `Assets/Scenes` | Unity project structure is present; builder can assemble valid external exports. |
 
 ## Required Production Split
@@ -26,7 +27,9 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 
 - Manifest: `Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json`
 - Terrain: imported from `Assets/TerrainPipeline/ExternalTerrainExports/Houdini` at 1025 height resolution, 512 alphamap resolution, 4 terrain layers.
-- Foliage/details: 2 detail prototype(s), 256 detail resolution, 115019 mask-painted detail instance(s).
+- Terrain PBR textures: 4 CC0 terrain source set(s) assigned to terrain layers; manifest `Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/cc0_terrain_textures_manifest.json`.
+- Foliage/details: 2 detail prototype(s), 256 detail resolution, 114404 mask-painted detail instance(s).
+- Cave terrain holes: 1 opening(s), 3249 hidden terrain hole pixel(s).
 - Mesh streaming: 12 stream cell(s), 12 LODGroup(s), 3 Houdini chunk cell(s), 9 Blender/reference cell(s).
 
 ## Blocking Items For Final Quality

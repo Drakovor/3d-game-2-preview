@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T07:42:04.2982310Z",
+    "generatedAtUtc": "2026-06-21T07:55:02.3964680Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -22,6 +22,14 @@
             "Flow_Mud",
             "Altitude_SnowCrystal"
         ],
+        "terrainPbrTextureSetCount": 4,
+        "terrainPbrTextureSets": [
+            "Moss_Dark",
+            "Slope_BlackRock",
+            "Flow_Mud",
+            "Altitude_SnowCrystal"
+        ],
+        "cc0TerrainTextureManifest": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/cc0_terrain_textures_manifest.json",
         "maskFiles": [
             "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_slope.png",
             "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_flow.png",
@@ -35,10 +43,16 @@
             "Mud_Tuft_HoudiniFlow"
         ],
         "detailLayerInstanceCounts": [
-            110488,
+            109873,
             4531
         ],
-        "totalDetailInstances": 115019
+        "totalDetailInstances": 114404,
+        "holesResolution": 1024,
+        "terrainHolePixelCount": 3249,
+        "caveOpeningCount": 1,
+        "caveOpeningNames": [
+            "Houdini_CaveEntrance_A_TerrainHole"
+        ]
     },
     "meshStreaming": {
         "totalSpecs": 12,
@@ -111,6 +125,12 @@
             "state": "Waiting",
             "role": "PBR texturing for 3D hero meshes: BaseColor, Normal, MaskMap.",
             "details": "No complete PBR texture set found yet."
+        },
+        {
+            "tool": "ambientCG CC0 Terrain Textures",
+            "state": "Ready",
+            "role": "Free professional terrain PBR fallback while paid/unavailable texturing tools are missing: BaseColor, Normal, AO, Roughness, Height.",
+            "details": "4 complete CC0 terrain PBR source set(s) found; Unity generates mask maps from AO/Roughness/Height."
         },
         {
             "tool": "Unity",

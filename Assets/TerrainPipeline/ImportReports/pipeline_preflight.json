@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T07:42:19Z",
+  "generatedAt": "2026-06-21T07:55:46Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "gates": [
     {
@@ -31,6 +31,13 @@
       "nextAction": "Replace or augment blockout chunks with Houdini/ZBrush/Substance assets as they become available."
     },
     {
+      "name": "CC0 terrain PBR fallback",
+      "state": "ready",
+      "summary": "4 complete CC0 terrain PBR source set(s) found, 4 Unity mask map(s) generated.",
+      "evidence": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/cc0_terrain_textures_manifest.json",
+      "nextAction": "Keep this as the terrain-material fallback until/if a paid Substance or scan library pass replaces it."
+    },
+    {
       "name": "Substance PBR texture sets",
       "state": "waiting",
       "summary": "No complete BaseColor/Normal/MaskMap set found yet.",
@@ -40,7 +47,7 @@
     {
       "name": "Unity integration scene",
       "state": "ready",
-      "summary": "Unity scene has 12 stream cell(s), 4 terrain layer(s), 2 foliage prototype(s), 115019 mask-painted detail instance(s), and terrain imported=True.",
+      "summary": "Unity scene has 12 stream cell(s), 4 terrain layer(s), 4 terrain PBR set(s), 2 foliage prototype(s), 114404 mask-painted detail instance(s), 1 cave opening(s), 3249 terrain hole pixel(s), and terrain imported=True.",
       "evidence": "Assets/Scenes/FantasyOpenWorld.unity; Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md; Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json",
       "nextAction": "Rebuild Unity after every external terrain, Houdini, ZBrush, or Substance export."
     }
