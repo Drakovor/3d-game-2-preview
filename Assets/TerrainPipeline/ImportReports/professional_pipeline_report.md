@@ -34,6 +34,7 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Mesh streaming: 31 stream cell(s), 31 LODGroup(s), 3 Houdini chunk cell(s), 13 CC0 kitbash cell(s), 15 Blender/reference cell(s).
 - Play mode view: `Player_Explorer_Controller` has a `CharacterController` and `TerrainExplorerController`; use the Game tab and Play to walk the real Unity terrain.
 - Spawn readability: the rebuilt scene includes a visible explorer avatar, campfire, and wayposts anchored to the Houdini heightmap.
+- Biome dressing: forest trees/deadwood, ruin columns, canyon boulders, cave torches, crystal clusters, and snow cairns are generated in Unity and snapped to the Houdini terrain.
 - Overview verification: `World_Overview_Camera` is kept for whole-map captures and does not replace the playable camera.
 
 ## Blocking Items For Final Quality
