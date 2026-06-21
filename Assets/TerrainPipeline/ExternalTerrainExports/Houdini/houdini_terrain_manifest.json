@@ -15,5 +15,14 @@
     "mask_biome_rgba.png",
     "color_preview.png"
   ],
-  "note": "Mac-local Houdini heightfield export. Unity only imports these files."
+  "playableDesign": [
+    "central basin with loop route",
+    "south cave approach",
+    "east canyon corridor",
+    "north snow ridge",
+    "south-west forest rise",
+    "ruins plateau",
+    "lake and river masks"
+  ],
+  "note": "Mac-local Houdini heightfield export for a 1km explorable world. Unity only imports these files."
 }

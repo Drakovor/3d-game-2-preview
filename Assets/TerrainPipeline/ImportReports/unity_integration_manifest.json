@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T08:13:16.1306980Z",
+    "generatedAtUtc": "2026-06-21T08:56:13.1094750Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -43,10 +43,10 @@
             "Mud_Tuft_HoudiniFlow"
         ],
         "detailLayerInstanceCounts": [
-            109873,
-            4531
+            170672,
+            8359
         ],
-        "totalDetailInstances": 114404,
+        "totalDetailInstances": 179031,
         "holesResolution": 1024,
         "terrainHolePixelCount": 3249,
         "caveOpeningCount": 1,
@@ -61,13 +61,13 @@
         "houdiniCellCount": 3,
         "cc0MeshCellCount": 7,
         "referenceCellCount": 9,
-        "meshColliderCount": 19,
+        "meshColliderCount": 24,
         "streamCellNames": [
-            "FloatingIsland_Forest_StreamCell",
-            "FloatingIsland_Ruins_StreamCell",
-            "FloatingIsland_Volcano_StreamCell",
-            "FloatingIsland_Crystal_StreamCell",
-            "FloatingIsland_Snow_StreamCell",
+            "GroundedIsland_Forest_StreamCell",
+            "GroundedIsland_Ruins_StreamCell",
+            "GroundedIsland_Volcano_StreamCell",
+            "GroundedIsland_Crystal_StreamCell",
+            "GroundedIsland_Snow_StreamCell",
             "CliffWall_A_StreamCell",
             "CanyonSegment_A_StreamCell",
             "RockSpire_A_StreamCell",
@@ -126,7 +126,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "19 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "34 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",

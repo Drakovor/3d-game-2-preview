@@ -1,7 +1,7 @@
 {
   "units": "meters",
   "world": {
-    "name": "FantasyOneKilometerWorld",
+    "name": "FantasyOneKilometerExplorationWorld",
     "targetEngine": "Unity",
     "meshDecorRatio": 0.8,
     "heightmapTerrainRatio": 0.2,
@@ -12,22 +12,22 @@
     ]
   },
   "terrainExport": {
-    "heightmap": "Assets/TerrainPipeline/ExternalTerrainExports/Gaea/base_height_1025.png",
-    "slopeMask": "Assets/TerrainPipeline/ExternalTerrainExports/Gaea/mask_slope.png",
-    "flowMask": "Assets/TerrainPipeline/ExternalTerrainExports/Gaea/mask_flow.png",
-    "biomeMask": "Assets/TerrainPipeline/ExternalTerrainExports/Gaea/mask_biome_rgba.png"
+    "heightmap": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/base_height_1025.png",
+    "slopeMask": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_slope.png",
+    "flowMask": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_flow.png",
+    "biomeMask": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_biome_rgba.png"
   },
   "meshAssets": [
     {
-      "name": "FloatingIsland_Forest",
-      "biome": "Forest",
-      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Forest_LOD0.fbx",
-      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Forest_LOD1.fbx",
-      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Forest_LOD2.fbx",
+      "name": "GroundedIsland_Forest",
+      "biome": "Southwest Forest Plateau",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Forest_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Forest_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Forest_LOD2.fbx",
       "position": [
-        -330,
-        115,
-        -120
+        -360,
+        0,
+        -230
       ],
       "rotation": [
         0,
@@ -35,47 +35,47 @@
         0
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.08,
+        1.0,
+        1.08
       ],
-      "streamDistance": 1850,
+      "streamDistance": 1200,
       "collider": "mesh"
     },
     {
-      "name": "FloatingIsland_Ruins",
-      "biome": "Ruins",
-      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Ruins_LOD0.fbx",
-      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Ruins_LOD1.fbx",
-      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Ruins_LOD2.fbx",
+      "name": "GroundedIsland_Ruins",
+      "biome": "Central Ruins Plateau",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Ruins_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Ruins_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Ruins_LOD2.fbx",
       "position": [
-        70,
-        150,
-        245
+        35,
+        0,
+        165
       ],
       "rotation": [
         0,
-        -26,
+        -20,
         0
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.05,
+        1.0,
+        1.05
       ],
-      "streamDistance": 1850,
+      "streamDistance": 1200,
       "collider": "mesh"
     },
     {
-      "name": "FloatingIsland_Volcano",
-      "biome": "Volcano",
-      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Volcano_LOD0.fbx",
-      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Volcano_LOD1.fbx",
-      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Volcano_LOD2.fbx",
+      "name": "GroundedIsland_Volcano",
+      "biome": "Southeast Basalt Rise",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Volcano_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Volcano_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Volcano_LOD2.fbx",
       "position": [
-        335,
-        160,
-        -210
+        345,
+        0,
+        -245
       ],
       "rotation": [
         0,
@@ -83,23 +83,23 @@
         0
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "streamDistance": 1850,
+      "streamDistance": 1200,
       "collider": "mesh"
     },
     {
-      "name": "FloatingIsland_Crystal",
-      "biome": "Crystal",
-      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Crystal_LOD0.fbx",
-      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Crystal_LOD1.fbx",
-      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Crystal_LOD2.fbx",
+      "name": "GroundedIsland_Crystal",
+      "biome": "Northwest Crystal Ridge",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Crystal_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Crystal_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Crystal_LOD2.fbx",
       "position": [
-        -150,
-        190,
-        360
+        -185,
+        0,
+        340
       ],
       "rotation": [
         0,
@@ -107,23 +107,23 @@
         0
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "streamDistance": 1850,
+      "streamDistance": 1200,
       "collider": "mesh"
     },
     {
-      "name": "FloatingIsland_Snow",
-      "biome": "Snow",
-      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Snow_LOD0.fbx",
-      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Snow_LOD1.fbx",
-      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/FloatingIsland_Snow_LOD2.fbx",
+      "name": "GroundedIsland_Snow",
+      "biome": "Northern Snow Ridge",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Snow_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Snow_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/GroundedIsland_Snow_LOD2.fbx",
       "position": [
-        400,
-        225,
-        320
+        335,
+        0,
+        355
       ],
       "rotation": [
         0,
@@ -131,23 +131,23 @@
         0
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.08,
+        1.0,
+        1.08
       ],
-      "streamDistance": 1850,
+      "streamDistance": 1200,
       "collider": "mesh"
     },
     {
       "name": "CliffWall_A",
-      "biome": "Cliff",
+      "biome": "North Cliff Boundary",
       "fbx": "Assets/Art/Environment/FloatingWorld/FBX/CliffWall_A_LOD0.fbx",
       "lod1": "",
       "lod2": "",
       "position": [
-        -85,
-        36,
-        -420
+        -175,
+        0,
+        420
       ],
       "rotation": [
         0,
@@ -159,19 +159,19 @@
         1.1,
         0.92
       ],
-      "streamDistance": 850,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
       "name": "CanyonSegment_A",
-      "biome": "Canyon",
+      "biome": "East Canyon",
       "fbx": "Assets/Art/Environment/FloatingWorld/FBX/CanyonSegment_A_LOD0.fbx",
       "lod1": "",
       "lod2": "",
       "position": [
-        225,
-        34,
-        70
+        285,
+        0,
+        80
       ],
       "rotation": [
         0,
@@ -183,19 +183,19 @@
         0.95,
         0.72
       ],
-      "streamDistance": 850,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
       "name": "RockSpire_A",
-      "biome": "Spire",
+      "biome": "West Landmark Spire",
       "fbx": "Assets/Art/Environment/FloatingWorld/FBX/RockSpire_A_LOD0.fbx",
       "lod1": "",
       "lod2": "",
       "position": [
-        -395,
-        85,
-        245
+        -405,
+        0,
+        235
       ],
       "rotation": [
         0,
@@ -207,19 +207,19 @@
         1.1,
         1.25
       ],
-      "streamDistance": 900,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
       "name": "CaveEntrance_A",
-      "biome": "Cave",
+      "biome": "South Cave",
       "fbx": "Assets/Art/Environment/FloatingWorld/FBX/CaveEntrance_A_LOD0.fbx",
       "lod1": "",
       "lod2": "",
       "position": [
-        115,
-        22,
-        -335
+        95,
+        0,
+        -350
       ],
       "rotation": [
         0,
@@ -231,7 +231,7 @@
         1.35,
         1.35
       ],
-      "streamDistance": 700,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -241,9 +241,9 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
       "position": [
-        94,
-        31,
-        -348
+        78,
+        0,
+        -360
       ],
       "rotation": [
         0,
@@ -255,7 +255,7 @@
         8.0,
         7.0
       ],
-      "streamDistance": 820,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -265,9 +265,9 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
       "position": [
-        -122,
-        52,
-        -430
+        -205,
+        0,
+        425
       ],
       "rotation": [
         0,
@@ -279,7 +279,7 @@
         9.0,
         8.5
       ],
-      "streamDistance": 920,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -289,9 +289,9 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
       "position": [
-        195,
-        42,
-        38
+        245,
+        0,
+        45
       ],
       "rotation": [
         0,
@@ -303,7 +303,7 @@
         6.5,
         6.5
       ],
-      "streamDistance": 840,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -313,9 +313,9 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
       "position": [
-        258,
-        40,
-        112
+        320,
+        0,
+        122
       ],
       "rotation": [
         0,
@@ -327,7 +327,7 @@
         6.0,
         6.0
       ],
-      "streamDistance": 840,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -337,9 +337,9 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
       "position": [
-        -286,
-        29,
-        -96
+        -318,
+        0,
+        -206
       ],
       "rotation": [
         0,
@@ -351,7 +351,7 @@
         3.8,
         3.8
       ],
-      "streamDistance": 620,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -361,9 +361,9 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
       "position": [
-        38,
-        24,
-        -226
+        -55,
+        0,
+        -136
       ],
       "rotation": [
         0,
@@ -375,7 +375,7 @@
         3.2,
         3.2
       ],
-      "streamDistance": 620,
+      "streamDistance": 950,
       "collider": "mesh"
     },
     {
@@ -385,8 +385,8 @@
       "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
       "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
       "position": [
-        154,
-        25,
+        125,
+        0,
         -306
       ],
       "rotation": [
@@ -399,7 +399,7 @@
         2.8,
         2.8
       ],
-      "streamDistance": 580,
+      "streamDistance": 950,
       "collider": "mesh"
     }
   ]

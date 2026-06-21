@@ -97,7 +97,7 @@ function drawAssets(layout, houdiniAssets = []) {
   assets.forEach((asset, index) => {
     const p = project(asset.position, frame);
     const color = asset.name?.startsWith("Houdini_") ? "#f28a3d" : index % 3 === 0 ? "#a5d96a" : index % 3 === 1 ? "#f28a3d" : "#7d5cff";
-    const radius = asset.name.includes("FloatingIsland") ? 17 : 12;
+    const radius = asset.name.includes("GroundedIsland") ? 17 : 12;
 
     ctx.fillStyle = color;
     ctx.globalAlpha = 0.20;
