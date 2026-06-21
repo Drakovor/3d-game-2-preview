@@ -233,6 +233,174 @@
       ],
       "streamDistance": 700,
       "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_CaveLip",
+      "biome": "CC0 Cliff Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        94,
+        31,
+        -348
+      ],
+      "rotation": [
+        0,
+        -18,
+        0
+      ],
+      "scale": [
+        9.0,
+        8.0,
+        7.0
+      ],
+      "streamDistance": 820,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_NorthCliff",
+      "biome": "CC0 Cliff Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        -122,
+        52,
+        -430
+      ],
+      "rotation": [
+        0,
+        11,
+        0
+      ],
+      "scale": [
+        12.5,
+        9.0,
+        8.5
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_CanyonLeft",
+      "biome": "CC0 Canyon Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        195,
+        42,
+        38
+      ],
+      "rotation": [
+        0,
+        -62,
+        0
+      ],
+      "scale": [
+        7.5,
+        6.5,
+        6.5
+      ],
+      "streamDistance": 840,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_RockFace02_CanyonRight",
+      "biome": "CC0 Canyon Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+      "position": [
+        258,
+        40,
+        112
+      ],
+      "rotation": [
+        0,
+        124,
+        0
+      ],
+      "scale": [
+        7.0,
+        6.0,
+        6.0
+      ],
+      "streamDistance": 840,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_DeadTreeTrunk_ForestFloor_A",
+      "biome": "CC0 Deadwood Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
+      "position": [
+        -286,
+        29,
+        -96
+      ],
+      "rotation": [
+        0,
+        32,
+        0
+      ],
+      "scale": [
+        3.8,
+        3.8,
+        3.8
+      ],
+      "streamDistance": 620,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_DeadTreeTrunk_MudValley_A",
+      "biome": "CC0 Deadwood Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
+      "position": [
+        38,
+        24,
+        -226
+      ],
+      "rotation": [
+        0,
+        -38,
+        0
+      ],
+      "scale": [
+        3.2,
+        3.2,
+        3.2
+      ],
+      "streamDistance": 620,
+      "collider": "mesh"
+    },
+    {
+      "name": "PolyHaven_DeadTreeTrunk_CaveApproach_A",
+      "biome": "CC0 Deadwood Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
+      "position": [
+        154,
+        25,
+        -306
+      ],
+      "rotation": [
+        0,
+        76,
+        0
+      ],
+      "scale": [
+        2.8,
+        2.8,
+        2.8
+      ],
+      "streamDistance": 580,
+      "collider": "mesh"
     }
   ]
 }

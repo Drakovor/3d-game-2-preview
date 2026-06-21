@@ -1,0 +1,109 @@
+{
+  "source": "Poly Haven",
+  "license": "Creative Commons CC0 1.0 Universal",
+  "resolution": "1K glTF source textures",
+  "usage": "CC0 mesh kitbash assets for Unity stream cells; terrain still comes from Houdini/Gaea/World Creator/World Machine outputs.",
+  "assets": [
+    {
+      "assetId": "rock_face_02",
+      "displayName": "Rock Face 02",
+      "unityName": "PolyHaven_RockFace02",
+      "sourceUrl": "https://polyhaven.com/a/rock_face_02",
+      "description": "Weathered sandstone cliff face for cave lips, canyon walls, and slope kitbashing.",
+      "downloadRoot": "Build/Downloads/PolyHaven/rock_face_02",
+      "sourceFiles": {
+        "gltf": "Build/Downloads/PolyHaven/rock_face_02/rock_face_02_1k.gltf",
+        "bin": "Build/Downloads/PolyHaven/rock_face_02/rock_face_02.bin",
+        "diffuse": "Build/Downloads/PolyHaven/rock_face_02/textures/rock_face_02_diff_1k.jpg",
+        "normal": "Build/Downloads/PolyHaven/rock_face_02/textures/rock_face_02_nor_gl_1k.jpg",
+        "arm": "Build/Downloads/PolyHaven/rock_face_02/textures/rock_face_02_arm_1k.jpg"
+      },
+      "unityTextures": {
+        "BaseColor": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC03D/PolyHaven_RockFace02/PolyHaven_RockFace02_BaseColor.jpg",
+        "Normal": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC03D/PolyHaven_RockFace02/PolyHaven_RockFace02_Normal.jpg",
+        "ARM": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC03D/PolyHaven_RockFace02/PolyHaven_RockFace02_ARM.jpg"
+      },
+      "generatedFbx": [
+        "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+        "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+        "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx"
+      ],
+      "generatedLods": [
+        {
+          "lod": 0,
+          "ratio": 0.7,
+          "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD0.fbx",
+          "vertices": 11835,
+          "triangles": 20695
+        },
+        {
+          "lod": 1,
+          "ratio": 0.32,
+          "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD1.fbx",
+          "vertices": 5888,
+          "triangles": 9461
+        },
+        {
+          "lod": 2,
+          "ratio": 0.08,
+          "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_RockFace02_LOD2.fbx",
+          "vertices": 1781,
+          "triangles": 2365
+        }
+      ]
+    },
+    {
+      "assetId": "dead_tree_trunk",
+      "displayName": "Dead Tree Trunk",
+      "unityName": "PolyHaven_DeadTreeTrunk",
+      "sourceUrl": "https://polyhaven.com/a/dead_tree_trunk",
+      "description": "Weathered dead trunk for forest floor detail, muddy valleys, and cave approach dressing.",
+      "downloadRoot": "Build/Downloads/PolyHaven/dead_tree_trunk",
+      "sourceFiles": {
+        "gltf": "Build/Downloads/PolyHaven/dead_tree_trunk/dead_tree_trunk_1k.gltf",
+        "bin": "Build/Downloads/PolyHaven/dead_tree_trunk/dead_tree_trunk.bin",
+        "diffuse": "Build/Downloads/PolyHaven/dead_tree_trunk/textures/dead_tree_trunk_diff_1k.jpg",
+        "normal": "Build/Downloads/PolyHaven/dead_tree_trunk/textures/dead_tree_trunk_nor_gl_1k.jpg",
+        "arm": "Build/Downloads/PolyHaven/dead_tree_trunk/textures/dead_tree_trunk_arm_1k.jpg"
+      },
+      "unityTextures": {
+        "BaseColor": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC03D/PolyHaven_DeadTreeTrunk/PolyHaven_DeadTreeTrunk_BaseColor.jpg",
+        "Normal": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC03D/PolyHaven_DeadTreeTrunk/PolyHaven_DeadTreeTrunk_Normal.jpg",
+        "ARM": "Assets/Art/Environment/FloatingWorld/Materials/Textures/CC03D/PolyHaven_DeadTreeTrunk/PolyHaven_DeadTreeTrunk_ARM.jpg"
+      },
+      "generatedFbx": [
+        "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+        "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+        "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx"
+      ],
+      "generatedLods": [
+        {
+          "lod": 0,
+          "ratio": 0.35,
+          "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD0.fbx",
+          "vertices": 19409,
+          "triangles": 35630
+        },
+        {
+          "lod": 1,
+          "ratio": 0.16,
+          "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD1.fbx",
+          "vertices": 9478,
+          "triangles": 16287
+        },
+        {
+          "lod": 2,
+          "ratio": 0.045,
+          "fbx": "Assets/Art/Environment/FloatingWorld/FBX/PolyHaven_DeadTreeTrunk_LOD2.fbx",
+          "vertices": 3037,
+          "triangles": 4581
+        }
+      ]
+    }
+  ],
+  "conversion": {
+    "tool": "Blender",
+    "script": "Tools/FantasyWorldPipeline/blender/export_polyhaven_cc0_assets.py",
+    "note": "Blender converts CC0 glTF sources into Unity FBX LODs; it is not the terrain authoring source."
+  }
+}

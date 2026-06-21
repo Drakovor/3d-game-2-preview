@@ -3,6 +3,7 @@ const assetUrl = (path) => `${rootPrefix}${path}`;
 const layoutPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/world_layout.json");
 const houdiniGeneratedPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/houdini_generated_assets.json");
 const houdiniPreviewMeshesPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/houdini_preview_meshes.json");
+const polyhavenPreviewMeshesPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/polyhaven_preview_meshes.json");
 const preflightPath = assetUrl("/Assets/TerrainPipeline/ImportReports/pipeline_preflight.json");
 const unityManifestPath = assetUrl("/Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json");
 const houdiniHeightmapPath = assetUrl("/Assets/TerrainPipeline/ExternalTerrainExports/Houdini/base_height_1025.png");
@@ -15,6 +16,7 @@ const roles = [
   ["ZBrush", "Hero sculpt detail and high-poly rock/ruin surfaces."],
   ["Blender", "Blockout, kitbash, pivot cleanup, local reference mesh chunks."],
   ["ambientCG CC0", "Free terrain PBR fallback: moss, cliff rock, mud flow, and snow source maps."],
+  ["Poly Haven CC0", "Free mesh kitbash fallback: rock faces and deadwood placed as Unity stream cells."],
   ["Substance Painter", "PBR BaseColor, Normal, MaskMap for mesh assets."],
   ["Unity", "Integration, Terrain import, LODGroups, colliders, streaming cells."]
 ];
@@ -260,7 +262,8 @@ async function renderUnityIntegrationStatus() {
   const pbr = Number(terrain.terrainPbrTextureSetCount || 0);
   const foliage = Number(terrain.totalDetailInstances || 0);
   const caves = Number(terrain.caveOpeningCount || 0);
-  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${layers} terrain layer(s) · ${pbr} PBR terrain set(s) · ${foliage} foliage detail(s) · ${caves} cave hole(s)`;
+  const cc0Cells = Number(mesh.cc0MeshCellCount || 0);
+  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${cc0Cells} CC0 kit cell(s) · ${layers} terrain layer(s) · ${pbr} PBR terrain set(s) · ${foliage} foliage detail(s) · ${caves} cave hole(s)`;
   unityStatus.className = terrainReady && cells > 0 && layers > 0 && pbr > 0 && foliage > 0 && caves > 0 ? "status ready" : "status warning";
 }
 
@@ -358,7 +361,7 @@ function loadImage(src) {
 }
 
 function buildTerrainMesh(image) {
-  const grid = 145;
+  const grid = 144;
   const sample = document.createElement("canvas");
   sample.width = grid;
   sample.height = grid;
@@ -580,17 +583,18 @@ function addHoudiniPreviewMeshes(mesh, previewMeshes) {
     sourceIndices.forEach((index) => target.indices.push(start + index));
   });
 
+  const maxIndex = target.indices.reduce((max, index) => Math.max(max, index), 0);
   return {
     positions: new Float32Array(target.positions),
     colors: new Float32Array(target.colors),
-    indices: new Uint16Array(target.indices),
-    indexType: "uint16",
+    indices: maxIndex > 65535 ? new Uint32Array(target.indices) : new Uint16Array(target.indices),
+    indexType: maxIndex > 65535 ? "uint32" : "uint16",
     grid: mesh.grid,
     heights: mesh.heights
   };
 }
 
-async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
+async function initTerrain3d(houdiniAssets = [], previewMeshes = [], previewLabel = "") {
   if (!terrainCanvas) {
     return;
   }
@@ -609,8 +613,8 @@ async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
   }
 
   const terrainMesh = buildTerrainMesh(image);
-  const mesh = houdiniPreviewMeshes.length > 0
-    ? addHoudiniPreviewMeshes(terrainMesh, houdiniPreviewMeshes)
+  const mesh = previewMeshes.length > 0
+    ? addHoudiniPreviewMeshes(terrainMesh, previewMeshes)
     : addHoudiniPreviewChunks(terrainMesh, houdiniAssets);
   const program = createProgram(gl);
   gl.useProgram(program);
@@ -631,6 +635,10 @@ async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
 
   const indexBuffer = gl.createBuffer();
   gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
+  if (mesh.indexType === "uint32" && !gl.getExtension("OES_element_index_uint")) {
+    terrain3dStatus.textContent = "WebGL preview needs uint32 index support";
+    return;
+  }
   gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, mesh.indices, gl.STATIC_DRAW);
 
   const projectionLocation = gl.getUniformLocation(program, "u_projection");
@@ -662,8 +670,8 @@ async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
     radius = Math.max(4.2, Math.min(11.0, radius + event.deltaY * 0.006));
   }, { passive: false });
 
-  terrain3dStatus.textContent = houdiniPreviewMeshes.length > 0
-    ? `WebGL tech preview · ${houdiniPreviewMeshes.length} real Houdini mesh(es)`
+  terrain3dStatus.textContent = previewMeshes.length > 0
+    ? `WebGL tech preview · ${previewLabel || `${previewMeshes.length} real mesh group(s)`}`
     : `WebGL tech preview · ${houdiniAssets.length} Houdini proxy chunk(s)`;
 
   function resize() {
@@ -691,7 +699,8 @@ async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
     ];
     gl.uniformMatrix4fv(projectionLocation, false, new Float32Array(mat4Perspective(Math.PI / 4, aspect, 0.1, 60)));
     gl.uniformMatrix4fv(viewLocation, false, new Float32Array(mat4LookAt(eye, [0, 0.58, 0], [0, 1, 0])));
-    gl.drawElements(gl.TRIANGLES, mesh.indices.length, gl.UNSIGNED_SHORT, 0);
+    const drawType = mesh.indexType === "uint32" ? gl.UNSIGNED_INT : gl.UNSIGNED_SHORT;
+    gl.drawElements(gl.TRIANGLES, mesh.indices.length, drawType, 0);
     requestAnimationFrame(render);
   }
   render();
@@ -702,6 +711,7 @@ async function main() {
   let layout = null;
   let houdiniData = null;
   let houdiniPreviewData = null;
+  let polyhavenPreviewData = null;
   try {
     const response = await fetch(layoutPath, { cache: "no-store" });
     layout = response.ok ? await response.json() : null;
@@ -720,6 +730,12 @@ async function main() {
   } catch {
     houdiniPreviewData = null;
   }
+  try {
+    const response = await fetch(polyhavenPreviewMeshesPath, { cache: "no-store" });
+    polyhavenPreviewData = response.ok ? await response.json() : null;
+  } catch {
+    polyhavenPreviewData = null;
+  }
 
   const houdiniAssets = (houdiniData?.assets ?? []).map((asset, index) => ({
     name: asset.name,
@@ -728,6 +744,9 @@ async function main() {
     position: asset.name.includes("CliffWall") ? [-80, 28, -410] : asset.name.includes("CaveEntrance") ? [115, 22, -335] : [225, 24, 70]
   }));
   const houdiniPreviewMeshes = houdiniPreviewData?.meshes ?? [];
+  const polyhavenPreviewMeshes = polyhavenPreviewData?.meshes ?? [];
+  const previewMeshes = [...houdiniPreviewMeshes, ...polyhavenPreviewMeshes];
+  const previewLabel = `${houdiniPreviewMeshes.length} Houdini mesh(es) · ${polyhavenPreviewMeshes.length} CC0 kit mesh group(s)`;
 
   drawAssets(layout, houdiniAssets);
   renderAssets(layout, houdiniAssets);
@@ -735,7 +754,7 @@ async function main() {
   await renderToolStatus(houdiniAssets.length);
   await renderPreflight();
   await renderUnityIntegrationStatus();
-  await initTerrain3d(houdiniAssets, houdiniPreviewMeshes);
+  await initTerrain3d(houdiniAssets, previewMeshes, previewLabel);
 }
 
 main();

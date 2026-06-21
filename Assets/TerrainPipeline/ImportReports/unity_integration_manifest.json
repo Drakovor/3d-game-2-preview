@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T07:55:02.3964680Z",
+    "generatedAtUtc": "2026-06-21T08:13:16.1306980Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -55,12 +55,13 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 12,
-        "streamCellCount": 12,
-        "lodGroupCount": 12,
+        "totalSpecs": 19,
+        "streamCellCount": 19,
+        "lodGroupCount": 19,
         "houdiniCellCount": 3,
+        "cc0MeshCellCount": 7,
         "referenceCellCount": 9,
-        "meshColliderCount": 12,
+        "meshColliderCount": 19,
         "streamCellNames": [
             "FloatingIsland_Forest_StreamCell",
             "FloatingIsland_Ruins_StreamCell",
@@ -71,6 +72,13 @@
             "CanyonSegment_A_StreamCell",
             "RockSpire_A_StreamCell",
             "CaveEntrance_A_StreamCell",
+            "PolyHaven_RockFace02_CaveLip_StreamCell",
+            "PolyHaven_RockFace02_NorthCliff_StreamCell",
+            "PolyHaven_RockFace02_CanyonLeft_StreamCell",
+            "PolyHaven_RockFace02_CanyonRight_StreamCell",
+            "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
+            "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
+            "PolyHaven_DeadTreeTrunk_CaveApproach_A_StreamCell",
             "Houdini_CanyonSegment_A_StreamCell",
             "Houdini_CaveEntrance_A_StreamCell",
             "Houdini_CliffWall_A_StreamCell"
@@ -131,6 +139,12 @@
             "state": "Ready",
             "role": "Free professional terrain PBR fallback while paid/unavailable texturing tools are missing: BaseColor, Normal, AO, Roughness, Height.",
             "details": "4 complete CC0 terrain PBR source set(s) found; Unity generates mask maps from AO/Roughness/Height."
+        },
+        {
+            "tool": "Poly Haven CC0 Mesh Kit",
+            "state": "Ready",
+            "role": "Free professional 3D kitbash assets for cliffs, cave lips, deadwood, and ground dressing when paid asset kits are unavailable.",
+            "details": "2 complete CC0 mesh asset set(s) found with FBX LODs and PBR textures."
         },
         {
             "tool": "Unity",
