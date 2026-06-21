@@ -881,6 +881,198 @@
       ],
       "streamDistance": 900,
       "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_SpawnApproach",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        -208,
+        0,
+        -258
+      ],
+      "rotation": [
+        0,
+        42,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_LowlandRun",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        -150,
+        0,
+        -196
+      ],
+      "rotation": [
+        0,
+        41,
+        0
+      ],
+      "scale": [
+        0.98,
+        0.98,
+        0.98
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteLowBridge_RiverCrossing",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteLowBridge_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteLowBridge_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteLowBridge_A_LOD2.fbx",
+      "position": [
+        -124,
+        0,
+        -172
+      ],
+      "rotation": [
+        0,
+        38,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteVistaMarker_LowlandFork",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD2.fbx",
+      "position": [
+        -84,
+        0,
+        -128
+      ],
+      "rotation": [
+        0,
+        52,
+        0
+      ],
+      "scale": [
+        1.6,
+        1.6,
+        1.6
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneSteps_MidSlope",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD2.fbx",
+      "position": [
+        -42,
+        0,
+        -92
+      ],
+      "rotation": [
+        0,
+        50,
+        0
+      ],
+      "scale": [
+        1.15,
+        1.15,
+        1.15
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_RuinsApproach",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        38,
+        0,
+        84
+      ],
+      "rotation": [
+        0,
+        8,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneSteps_RuinsClimb",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD2.fbx",
+      "position": [
+        46,
+        0,
+        138
+      ],
+      "rotation": [
+        0,
+        -12,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteVistaMarker_RuinsEdge",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD2.fbx",
+      "position": [
+        96,
+        0,
+        20
+      ],
+      "rotation": [
+        0,
+        86,
+        0
+      ],
+      "scale": [
+        1.45,
+        1.45,
+        1.45
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
     }
   ]
 }
