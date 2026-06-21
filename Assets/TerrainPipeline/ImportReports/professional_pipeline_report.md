@@ -31,7 +31,7 @@ Active terrain source: Assets/TerrainPipeline/ExternalTerrainExports/Houdini
 - Terrain PBR textures: 4 CC0 terrain source set(s) assigned to terrain layers; manifest `Assets/Art/Environment/FloatingWorld/Materials/Textures/CC0Terrain/cc0_terrain_textures_manifest.json`.
 - Foliage/details: 0 detail prototype(s), 256 detail resolution, 0 mask-painted detail instance(s).
 - Cave terrain holes: 1 opening(s), 3249 hidden terrain hole pixel(s).
-- Mesh streaming: 38 stream cell(s), 38 LODGroup(s), 0 Houdini chunk cell(s), 5 CC0 kitbash cell(s), 33 Blender/reference cell(s).
+- Mesh streaming: 56 stream cell(s), 56 LODGroup(s), 0 Houdini chunk cell(s), 5 CC0 kitbash cell(s), 51 Blender/reference cell(s).
 - Play mode view: `Player_Explorer_Controller` has a `CharacterController` and `TerrainExplorerController`; use the Game tab and Play to walk the real Unity terrain.
 - Spawn readability: the rebuilt scene opens with an exploration camera looking down a grounded Blender route kit anchored to the Houdini heightmap.
 - Biome dressing: forest trees/deadwood, ruin columns, canyon boulders, cave torches, crystal clusters, and snow cairns are generated in Unity and snapped to the Houdini terrain.

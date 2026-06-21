@@ -1385,6 +1385,438 @@
       ],
       "streamDistance": 920,
       "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_SpawnForeground",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        -286,
+        0,
+        -356
+      ],
+      "rotation": [
+        0,
+        36,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneThreshold_SpawnMouth",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD2.fbx",
+      "position": [
+        -274,
+        0,
+        -340
+      ],
+      "rotation": [
+        0,
+        37,
+        0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_IntroLeft",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        -302,
+        0,
+        -346
+      ],
+      "rotation": [
+        0,
+        30,
+        0
+      ],
+      "scale": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_IntroRight",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        -262,
+        0,
+        -330
+      ],
+      "rotation": [
+        0,
+        -146,
+        0
+      ],
+      "scale": [
+        1.05,
+        1.05,
+        1.05
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteDeadwoodTangle_IntroForest",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteDeadwoodTangle_A_LOD2.fbx",
+      "position": [
+        -318,
+        0,
+        -316
+      ],
+      "rotation": [
+        0,
+        68,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteVistaMarker_SpawnLookout",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD2.fbx",
+      "position": [
+        -252,
+        0,
+        -318
+      ],
+      "rotation": [
+        0,
+        54,
+        0
+      ],
+      "scale": [
+        1.35,
+        1.35,
+        1.35
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_WestReturn",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        -268,
+        0,
+        -110
+      ],
+      "rotation": [
+        0,
+        10,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteCliffFace_WestRidge",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD2.fbx",
+      "position": [
+        -272,
+        0,
+        92
+      ],
+      "rotation": [
+        0,
+        6,
+        0
+      ],
+      "scale": [
+        1.45,
+        1.45,
+        1.45
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_WestRidge",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        -246,
+        0,
+        126
+      ],
+      "rotation": [
+        0,
+        20,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneSteps_WestRise",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneSteps_A_LOD2.fbx",
+      "position": [
+        -224,
+        0,
+        72
+      ],
+      "rotation": [
+        0,
+        18,
+        0
+      ],
+      "scale": [
+        1.15,
+        1.15,
+        1.15
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_NorthRidge",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        -50,
+        0,
+        242
+      ],
+      "rotation": [
+        0,
+        72,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_CrystalRidge",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        92,
+        0,
+        292
+      ],
+      "rotation": [
+        0,
+        68,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneThreshold_NorthRidge",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD2.fbx",
+      "position": [
+        184,
+        0,
+        342
+      ],
+      "rotation": [
+        0,
+        66,
+        0
+      ],
+      "scale": [
+        1.45,
+        1.45,
+        1.45
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteVistaMarker_NorthEnd",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteVistaMarker_A_LOD2.fbx",
+      "position": [
+        190,
+        0,
+        340
+      ],
+      "rotation": [
+        0,
+        74,
+        0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteTrailBed_CanyonBranch",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteTrailBed_A_LOD2.fbx",
+      "position": [
+        206,
+        0,
+        70
+      ],
+      "rotation": [
+        0,
+        88,
+        0
+      ],
+      "scale": [
+        0.98,
+        0.98,
+        0.98
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteStoneThreshold_CanyonEntry",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteStoneThreshold_A_LOD2.fbx",
+      "position": [
+        150,
+        0,
+        44
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteCliffFace_CanyonOverlook",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteCliffFace_A_LOD2.fbx",
+      "position": [
+        288,
+        0,
+        104
+      ],
+      "rotation": [
+        0,
+        88,
+        0
+      ],
+      "scale": [
+        1.6,
+        1.6,
+        1.6
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_RouteRockBank_CanyonLip",
+      "biome": "Blender Grounded Route Corridor",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_RouteRockBank_A_LOD2.fbx",
+      "position": [
+        314,
+        0,
+        126
+      ],
+      "rotation": [
+        0,
+        76,
+        0
+      ],
+      "scale": [
+        1.32,
+        1.32,
+        1.32
+      ],
+      "streamDistance": 900,
+      "collider": "mesh"
     }
   ]
 }
