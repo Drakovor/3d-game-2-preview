@@ -2,6 +2,7 @@ const rootPrefix = window.location.pathname.includes("/Preview/") ? ".." : ".";
 const assetUrl = (path) => `${rootPrefix}${path}`;
 const layoutPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/world_layout.json");
 const houdiniGeneratedPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/houdini_generated_assets.json");
+const houdiniPreviewMeshesPath = assetUrl("/Assets/Art/Environment/FloatingWorld/Metadata/houdini_preview_meshes.json");
 const preflightPath = assetUrl("/Assets/TerrainPipeline/ImportReports/pipeline_preflight.json");
 const houdiniHeightmapPath = assetUrl("/Assets/TerrainPipeline/ExternalTerrainExports/Houdini/base_height_1025.png");
 
@@ -385,6 +386,7 @@ function buildTerrainMesh(image) {
     positions: new Float32Array(positions),
     colors: new Float32Array(colors),
     indices: new Uint16Array(indices),
+    indexType: "uint16",
     heights,
     grid
   };
@@ -396,6 +398,10 @@ function previewX(worldX) {
 
 function previewZ(worldZ) {
   return (worldZ / 1000) * 6.5;
+}
+
+function previewY(worldY) {
+  return (worldY / 180) * 1.95 - 0.25;
 }
 
 function sampleTerrainHeight(mesh, worldX, worldZ) {
@@ -510,12 +516,51 @@ function addHoudiniPreviewChunks(mesh, houdiniAssets) {
     positions: new Float32Array(target.positions),
     colors: new Float32Array(target.colors),
     indices: new Uint16Array(target.indices),
+    indexType: "uint16",
     grid: mesh.grid,
     heights: mesh.heights
   };
 }
 
-async function initTerrain3d(houdiniAssets = []) {
+function addHoudiniPreviewMeshes(mesh, previewMeshes) {
+  const target = {
+    positions: Array.from(mesh.positions),
+    colors: Array.from(mesh.colors),
+    indices: Array.from(mesh.indices)
+  };
+
+  previewMeshes.forEach((previewMesh) => {
+    const start = target.positions.length / 3;
+    const sourceVertices = previewMesh.vertices || [];
+    const sourceIndices = previewMesh.indices || [];
+    const color = previewMesh.color || [0.52, 0.40, 0.30];
+
+    for (let i = 0; i < sourceVertices.length; i += 3) {
+      const worldX = sourceVertices[i];
+      const worldY = sourceVertices[i + 1];
+      const worldZ = sourceVertices[i + 2];
+      target.positions.push(previewX(worldX), previewY(worldY), previewZ(worldZ));
+
+      const ridge = Math.sin(worldX * 0.027 + worldZ * 0.041) * 0.08;
+      const heightShade = Math.max(0, Math.min(1, worldY / 160));
+      const shade = Math.max(0.48, Math.min(1.16, 0.60 + heightShade * 0.36 + ridge));
+      target.colors.push(color[0] * shade, color[1] * shade, color[2] * shade);
+    }
+
+    sourceIndices.forEach((index) => target.indices.push(start + index));
+  });
+
+  return {
+    positions: new Float32Array(target.positions),
+    colors: new Float32Array(target.colors),
+    indices: new Uint16Array(target.indices),
+    indexType: "uint16",
+    grid: mesh.grid,
+    heights: mesh.heights
+  };
+}
+
+async function initTerrain3d(houdiniAssets = [], houdiniPreviewMeshes = []) {
   if (!terrainCanvas) {
     return;
   }
@@ -534,7 +579,9 @@ async function initTerrain3d(houdiniAssets = []) {
   }
 
   const terrainMesh = buildTerrainMesh(image);
-  const mesh = addHoudiniPreviewChunks(terrainMesh, houdiniAssets);
+  const mesh = houdiniPreviewMeshes.length > 0
+    ? addHoudiniPreviewMeshes(terrainMesh, houdiniPreviewMeshes)
+    : addHoudiniPreviewChunks(terrainMesh, houdiniAssets);
   const program = createProgram(gl);
   gl.useProgram(program);
 
@@ -585,7 +632,9 @@ async function initTerrain3d(houdiniAssets = []) {
     radius = Math.max(4.2, Math.min(11.0, radius + event.deltaY * 0.006));
   }, { passive: false });
 
-  terrain3dStatus.textContent = `Terrain + ${houdiniAssets.length} Houdini chunk(s) · drag to orbit · wheel to zoom`;
+  terrain3dStatus.textContent = houdiniPreviewMeshes.length > 0
+    ? `Terrain + ${houdiniPreviewMeshes.length} vrais mesh(es) Houdini · drag to orbit · wheel to zoom`
+    : `Terrain + ${houdiniAssets.length} Houdini chunk proxy/proxies · drag to orbit · wheel to zoom`;
 
   function resize() {
     const rect = terrainCanvas.getBoundingClientRect();
@@ -622,6 +671,7 @@ async function main() {
   renderRoles();
   let layout = null;
   let houdiniData = null;
+  let houdiniPreviewData = null;
   try {
     const response = await fetch(layoutPath, { cache: "no-store" });
     layout = response.ok ? await response.json() : null;
@@ -634,20 +684,27 @@ async function main() {
   } catch {
     houdiniData = null;
   }
+  try {
+    const response = await fetch(houdiniPreviewMeshesPath, { cache: "no-store" });
+    houdiniPreviewData = response.ok ? await response.json() : null;
+  } catch {
+    houdiniPreviewData = null;
+  }
 
   const houdiniAssets = (houdiniData?.assets ?? []).map((asset, index) => ({
     name: asset.name,
     biome: `Houdini ${asset.role}`,
     fbx: asset.fbx,
-    position: asset.name.includes("CliffWall") ? [-80, 28, -410] : asset.name.includes("CaveEntrance") ? [115, 22, -335] : [225 + index * 16, 24, 70 + index * 24]
+    position: asset.name.includes("CliffWall") ? [-80, 28, -410] : asset.name.includes("CaveEntrance") ? [115, 22, -335] : [225, 24, 70]
   }));
+  const houdiniPreviewMeshes = houdiniPreviewData?.meshes ?? [];
 
   drawAssets(layout, houdiniAssets);
   renderAssets(layout, houdiniAssets);
   await renderTerrainStatus();
   await renderToolStatus(houdiniAssets.length);
   await renderPreflight();
-  await initTerrain3d(houdiniAssets);
+  await initTerrain3d(houdiniAssets, houdiniPreviewMeshes);
 }
 
 main();
