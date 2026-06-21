@@ -256,8 +256,9 @@ async function renderUnityIntegrationStatus() {
   const terrainReady = Boolean(terrain.imported);
   const cells = Number(mesh.streamCellCount || 0);
   const layers = Number(terrain.terrainLayerCount || 0);
-  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${layers} terrain layer(s) · terrain ${terrainReady ? "imported" : "waiting"}`;
-  unityStatus.className = terrainReady && cells > 0 && layers > 0 ? "status ready" : "status warning";
+  const foliage = Number(terrain.totalDetailInstances || 0);
+  unityStatus.textContent = `Unity: ${cells} stream cell(s) · ${layers} terrain layer(s) · ${foliage} foliage detail(s)`;
+  unityStatus.className = terrainReady && cells > 0 && layers > 0 && foliage > 0 ? "status ready" : "status warning";
 }
 
 function mat4Perspective(fovy, aspect, near, far) {

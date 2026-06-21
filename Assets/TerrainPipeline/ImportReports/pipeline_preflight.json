@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T07:37:15Z",
+  "generatedAt": "2026-06-21T07:42:19Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "gates": [
     {
@@ -40,7 +40,7 @@
     {
       "name": "Unity integration scene",
       "state": "ready",
-      "summary": "Unity scene has 12 stream cell(s), 4 terrain layer(s), and terrain imported=True.",
+      "summary": "Unity scene has 12 stream cell(s), 4 terrain layer(s), 2 foliage prototype(s), 115019 mask-painted detail instance(s), and terrain imported=True.",
       "evidence": "Assets/Scenes/FantasyOpenWorld.unity; Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md; Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json",
       "nextAction": "Rebuild Unity after every external terrain, Houdini, ZBrush, or Substance export."
     }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T07:37:12Z",
+  "generatedAt": "2026-06-21T07:42:17Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "tools": [
     {"name": "Unity", "state": "installed", "role": "Integration only: scene assembly, Terrain import, LOD, colliders, streaming.", "appPath": "/Applications/Unity/Hub/Editor/6000.3.18f1/Unity.app", "downloadPath": "", "platformNote": "Native Mac app already installed.", "nextAction": "Use only after external terrain/mesh/texture outputs exist."},

@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T07:37:01.0338460Z",
+    "generatedAtUtc": "2026-06-21T07:42:04.2982310Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -27,7 +27,18 @@
             "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_flow.png",
             "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_deposit.png",
             "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_biome_rgba.png"
-        ]
+        ],
+        "detailResolution": 256,
+        "detailPrototypeCount": 2,
+        "detailLayerNames": [
+            "Dry_Grass_HoudiniMask",
+            "Mud_Tuft_HoudiniFlow"
+        ],
+        "detailLayerInstanceCounts": [
+            110488,
+            4531
+        ],
+        "totalDetailInstances": 115019
     },
     "meshStreaming": {
         "totalSpecs": 12,
