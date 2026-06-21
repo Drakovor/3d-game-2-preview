@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T14:07:37.2471310Z",
+    "generatedAtUtc": "2026-06-21T14:30:28.8968420Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -37,10 +37,16 @@
             "Assets/TerrainPipeline/ExternalTerrainExports/Houdini/mask_biome_rgba.png"
         ],
         "detailResolution": 256,
-        "detailPrototypeCount": 0,
-        "detailLayerNames": [],
-        "detailLayerInstanceCounts": [],
-        "totalDetailInstances": 0,
+        "detailPrototypeCount": 2,
+        "detailLayerNames": [
+            "Dry_Grass_HoudiniMask",
+            "Mud_Tuft_HoudiniFlow"
+        ],
+        "detailLayerInstanceCounts": [
+            80673,
+            2858
+        ],
+        "totalDetailInstances": 83531,
         "holesResolution": 1024,
         "terrainHolePixelCount": 3249,
         "caveOpeningCount": 1,
@@ -49,13 +55,13 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 69,
-        "streamCellCount": 69,
-        "lodGroupCount": 69,
+        "totalSpecs": 90,
+        "streamCellCount": 90,
+        "lodGroupCount": 90,
         "houdiniCellCount": 0,
         "cc0MeshCellCount": 5,
-        "referenceCellCount": 64,
-        "meshColliderCount": 1792,
+        "referenceCellCount": 85,
+        "meshColliderCount": 2563,
         "streamCellNames": [
             "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
@@ -125,7 +131,28 @@
             "Blender_BrokenCauseway_NorthRidge_StreamCell",
             "Blender_TerrainButtress_NorthRidgeShoulder_StreamCell",
             "Blender_TerrainButtress_CanyonWall_StreamCell",
-            "Blender_DeadForestCluster_WestReturn_StreamCell"
+            "Blender_DeadForestCluster_WestReturn_StreamCell",
+            "Blender_RavineWall_SpawnLeft_StreamCell",
+            "Blender_RavineWall_SpawnRight_StreamCell",
+            "Blender_RuinGate_SpawnMouth_StreamCell",
+            "Blender_ScreeField_SpawnForeground_StreamCell",
+            "Blender_RootBrush_SpawnLeftEdge_StreamCell",
+            "Blender_RootBrush_SpawnRightEdge_StreamCell",
+            "Blender_ErodedTerrace_LowlandCut_StreamCell",
+            "Blender_RavineWall_LowlandWest_StreamCell",
+            "Blender_ScreeField_LowlandRun_StreamCell",
+            "Blender_RootBrush_LowlandEdge_StreamCell",
+            "Blender_RuinGate_RuinsEntry_StreamCell",
+            "Blender_ErodedTerrace_RuinsShelf_StreamCell",
+            "Blender_RavineWall_RuinsBack_StreamCell",
+            "Blender_RavineWall_CanyonLeft_StreamCell",
+            "Blender_RavineWall_CanyonRight_StreamCell",
+            "Blender_ErodedTerrace_CanyonShelf_StreamCell",
+            "Blender_ScreeField_CanyonLip_StreamCell",
+            "Blender_RavineWall_NorthRidge_StreamCell",
+            "Blender_ScreeField_NorthRidge_StreamCell",
+            "Blender_ErodedTerrace_WestReturn_StreamCell",
+            "Blender_RootBrush_WestReturn_StreamCell"
         ],
         "missingFbx": []
     },
@@ -170,7 +197,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "100 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "115 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",
