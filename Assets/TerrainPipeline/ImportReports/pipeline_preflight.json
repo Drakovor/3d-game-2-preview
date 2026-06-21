@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:20:44Z",
+  "generatedAt": "2026-06-21T13:36:57Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "gates": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "1km world layout",
       "state": "ready",
-      "summary": "Layout contains 75 mesh placement(s).",
+      "summary": "Layout contains 88 mesh placement(s).",
       "evidence": "Assets/Art/Environment/FloatingWorld/Metadata/world_layout.json terrainSize=[1000.0, 150.0, 1000.0]",
       "nextAction": "Keep layout at 1000m x 1000m x 150m so terrain exports and mesh chunks share scale."
     },
@@ -26,7 +26,7 @@
     {
       "name": "Reference/static mesh chunks",
       "state": "ready",
-      "summary": "33 LOD0 FBX reference/static chunk(s) found.",
+      "summary": "36 LOD0 FBX reference/static chunk(s) found.",
       "evidence": "Assets/Art/Environment/FloatingWorld/FBX",
       "nextAction": "Replace or augment blockout chunks with Houdini/ZBrush/Substance assets as they become available."
     },
@@ -54,7 +54,7 @@
     {
       "name": "Unity integration scene",
       "state": "ready",
-      "summary": "Unity scene has 56 stream cell(s), 5 CC0 kitbash cell(s), 4 terrain layer(s), 4 terrain PBR set(s), 0 foliage prototype(s), 0 mask-painted detail instance(s), 1 cave opening(s), 3249 terrain hole pixel(s), and terrain imported=True.",
+      "summary": "Unity scene has 69 stream cell(s), 5 CC0 kitbash cell(s), 4 terrain layer(s), 4 terrain PBR set(s), 0 foliage prototype(s), 0 mask-painted detail instance(s), 1 cave opening(s), 3249 terrain hole pixel(s), and terrain imported=True.",
       "evidence": "Assets/Scenes/FantasyOpenWorld.unity; Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md; Assets/TerrainPipeline/ImportReports/unity_integration_manifest.json",
       "nextAction": "Rebuild Unity after every external terrain, Houdini, ZBrush, or Substance export."
     }

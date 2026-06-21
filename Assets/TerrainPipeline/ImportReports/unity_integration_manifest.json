@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T13:21:21.0879180Z",
+    "generatedAtUtc": "2026-06-21T13:38:24.1150070Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 150.0,
@@ -49,13 +49,13 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 56,
-        "streamCellCount": 56,
-        "lodGroupCount": 56,
+        "totalSpecs": 69,
+        "streamCellCount": 69,
+        "lodGroupCount": 69,
         "houdiniCellCount": 0,
         "cc0MeshCellCount": 5,
-        "referenceCellCount": 51,
-        "meshColliderCount": 1408,
+        "referenceCellCount": 64,
+        "meshColliderCount": 1792,
         "streamCellNames": [
             "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
@@ -112,7 +112,20 @@
             "Blender_RouteTrailBed_CanyonBranch_StreamCell",
             "Blender_RouteStoneThreshold_CanyonEntry_StreamCell",
             "Blender_RouteCliffFace_CanyonOverlook_StreamCell",
-            "Blender_RouteRockBank_CanyonLip_StreamCell"
+            "Blender_RouteRockBank_CanyonLip_StreamCell",
+            "Blender_BrokenCauseway_SpawnRun_StreamCell",
+            "Blender_TerrainButtress_SpawnLeftBackdrop_StreamCell",
+            "Blender_TerrainButtress_SpawnRightBackdrop_StreamCell",
+            "Blender_DeadForestCluster_SpawnEdge_StreamCell",
+            "Blender_BrokenCauseway_LowlandCrossing_StreamCell",
+            "Blender_TerrainButtress_LowlandLeftBank_StreamCell",
+            "Blender_DeadForestCluster_LowlandEdge_StreamCell",
+            "Blender_BrokenCauseway_RuinsApproach_StreamCell",
+            "Blender_TerrainButtress_RuinsPlateauEdge_StreamCell",
+            "Blender_BrokenCauseway_NorthRidge_StreamCell",
+            "Blender_TerrainButtress_NorthRidgeShoulder_StreamCell",
+            "Blender_TerrainButtress_CanyonWall_StreamCell",
+            "Blender_DeadForestCluster_WestReturn_StreamCell"
         ],
         "missingFbx": []
     },
@@ -157,7 +170,7 @@
             "tool": "Blender",
             "state": "Ready",
             "role": "Blockout, layout assembly, kitbash/reference modular meshes, and manual cleanup where needed.",
-            "details": "91 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
+            "details": "100 Blender reference FBX file(s) found. These are blockout/reference meshes, not a replacement for Houdini/ZBrush/Substance passes."
         },
         {
             "tool": "Substance Painter",

@@ -1817,6 +1817,318 @@
       ],
       "streamDistance": 900,
       "collider": "mesh"
+    },
+    {
+      "name": "Blender_BrokenCauseway_SpawnRun",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD2.fbx",
+      "position": [
+        -270,
+        0,
+        -338
+      ],
+      "rotation": [
+        0,
+        36,
+        0
+      ],
+      "scale": [
+        0.62,
+        0.62,
+        0.62
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_TerrainButtress_SpawnLeftBackdrop",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD2.fbx",
+      "position": [
+        -312,
+        0,
+        -332
+      ],
+      "rotation": [
+        0,
+        34,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.35,
+        1.25
+      ],
+      "streamDistance": 940,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_TerrainButtress_SpawnRightBackdrop",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD2.fbx",
+      "position": [
+        -238,
+        0,
+        -304
+      ],
+      "rotation": [
+        0,
+        -144,
+        0
+      ],
+      "scale": [
+        1.15,
+        1.25,
+        1.15
+      ],
+      "streamDistance": 940,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_DeadForestCluster_SpawnEdge",
+      "biome": "Blender Forest Edge Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD2.fbx",
+      "position": [
+        -330,
+        0,
+        -294
+      ],
+      "rotation": [
+        0,
+        20,
+        0
+      ],
+      "scale": [
+        1.05,
+        1.05,
+        1.05
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_BrokenCauseway_LowlandCrossing",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD2.fbx",
+      "position": [
+        -124,
+        0,
+        -172
+      ],
+      "rotation": [
+        0,
+        39,
+        0
+      ],
+      "scale": [
+        1.02,
+        1.02,
+        1.02
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_TerrainButtress_LowlandLeftBank",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD2.fbx",
+      "position": [
+        -160,
+        0,
+        -202
+      ],
+      "rotation": [
+        0,
+        38,
+        0
+      ],
+      "scale": [
+        1.1,
+        1.2,
+        1.1
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_DeadForestCluster_LowlandEdge",
+      "biome": "Blender Forest Edge Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD2.fbx",
+      "position": [
+        -92,
+        0,
+        -142
+      ],
+      "rotation": [
+        0,
+        -20,
+        0
+      ],
+      "scale": [
+        0.95,
+        0.95,
+        0.95
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_BrokenCauseway_RuinsApproach",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD2.fbx",
+      "position": [
+        36,
+        0,
+        100
+      ],
+      "rotation": [
+        0,
+        5,
+        0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_TerrainButtress_RuinsPlateauEdge",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD2.fbx",
+      "position": [
+        72,
+        0,
+        150
+      ],
+      "rotation": [
+        0,
+        -16,
+        0
+      ],
+      "scale": [
+        1.22,
+        1.32,
+        1.22
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_BrokenCauseway_NorthRidge",
+      "biome": "Blender Grounded Route Network",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_BrokenCauseway_A_LOD2.fbx",
+      "position": [
+        76,
+        0,
+        282
+      ],
+      "rotation": [
+        0,
+        70,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 950,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_TerrainButtress_NorthRidgeShoulder",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD2.fbx",
+      "position": [
+        150,
+        0,
+        326
+      ],
+      "rotation": [
+        0,
+        68,
+        0
+      ],
+      "scale": [
+        1.25,
+        1.35,
+        1.25
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_TerrainButtress_CanyonWall",
+      "biome": "Blender Grounded Route Landmark",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_TerrainButtress_A_LOD2.fbx",
+      "position": [
+        286,
+        0,
+        90
+      ],
+      "rotation": [
+        0,
+        88,
+        0
+      ],
+      "scale": [
+        1.35,
+        1.45,
+        1.35
+      ],
+      "streamDistance": 920,
+      "collider": "mesh"
+    },
+    {
+      "name": "Blender_DeadForestCluster_WestReturn",
+      "biome": "Blender Forest Edge Kitbash",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD0.fbx",
+      "lod1": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD1.fbx",
+      "lod2": "Assets/Art/Environment/FloatingWorld/FBX/Blender_DeadForestCluster_A_LOD2.fbx",
+      "position": [
+        -248,
+        0,
+        72
+      ],
+      "rotation": [
+        0,
+        26,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "streamDistance": 850,
+      "collider": "mesh"
     }
   ]
 }
