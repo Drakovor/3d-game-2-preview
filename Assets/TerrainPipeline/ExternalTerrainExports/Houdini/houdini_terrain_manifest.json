@@ -1,0 +1,19 @@
+{
+  "sourceTool": "Houdini",
+  "sourceHip": "/Users/drakovor/Documents/3D Game 2/Assets/Art/Environment/FloatingWorld/Houdini/fantasy_world_houdini_heightfield.hip",
+  "worldSizeMeters": [
+    1000.0,
+    180.0,
+    1000.0
+  ],
+  "resolution": 1025,
+  "outputs": [
+    "base_height_1025.png",
+    "mask_slope.png",
+    "mask_flow.png",
+    "mask_deposit.png",
+    "mask_biome_rgba.png",
+    "color_preview.png"
+  ],
+  "note": "Mac-local Houdini heightfield export. Unity only imports these files."
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fantasy World Pipeline Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Local Progress Preview</p>
+          <h1>1 km x 1 km Open World Pipeline</h1>
+          <p class="summary">
+            Houdini is the active Mac terrain source. Unity is integration only; Blender stays for reference/blockout and cleanup.
+          </p>
+        </div>
+        <div class="status-stack">
+          <div class="status warning" id="terrain-status">Terrain source: checking...</div>
+          <div class="status warning" id="houdini-status">Houdini: checking...</div>
+          <div class="status ready" id="mesh-status">Meshes: checking...</div>
+          <div class="status warning" id="install-status">Tools: checking...</div>
+        </div>
+      </section>
+
+      <section class="asset-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Houdini Terrain</p>
+            <h2>3D Local Preview</h2>
+          </div>
+          <div class="scale" id="terrain3d-status">Loading heightmap...</div>
+        </div>
+        <canvas id="terrain3d" class="terrain3d" width="1280" height="720" aria-label="3D Houdini terrain preview"></canvas>
+      </section>
+
+      <section class="preview-grid">
+        <div class="viewport-panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">World Layout</p>
+              <h2>Top-Down Studio Map</h2>
+            </div>
+            <div class="scale">1000m x 1000m</div>
+          </div>
+          <canvas id="map" width="1100" height="760" aria-label="Top down world layout preview"></canvas>
+        </div>
+
+        <aside class="side-panel">
+          <div class="panel-head compact">
+            <div>
+              <p class="eyebrow">Tool Roles</p>
+              <h2>Production Gates</h2>
+            </div>
+          </div>
+          <ul class="role-list" id="role-list"></ul>
+        </aside>
+      </section>
+
+      <section class="asset-panel">
+        <div class="panel-head compact">
+          <div>
+            <p class="eyebrow">Production Gates</p>
+            <h2>Pipeline Preflight</h2>
+          </div>
+        </div>
+        <div class="gate-table" id="gate-table"></div>
+      </section>
+
+      <section class="asset-panel">
+        <div class="panel-head compact">
+          <div>
+            <p class="eyebrow">Installed Tools</p>
+            <h2>Authoring Availability</h2>
+          </div>
+        </div>
+        <div class="asset-table" id="tool-table"></div>
+      </section>
+
+      <section class="asset-panel">
+        <div class="panel-head compact">
+          <div>
+            <p class="eyebrow">Mesh Layout</p>
+            <h2>Current Reference Chunks</h2>
+          </div>
+        </div>
+        <div class="asset-table" id="asset-table"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

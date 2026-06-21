@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-21T07:10:58Z",
+  "projectRoot": "/Users/drakovor/Documents/3D Game 2",
+  "gates": [
+    {
+      "name": "Professional terrain source",
+      "state": "ready",
+      "summary": "Houdini terrain export is present.",
+      "evidence": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini: base_height_1025.png, mask_slope.png, mask_flow.png, mask_deposit.png, mask_biome_rgba.png",
+      "nextAction": "Run Unity builder to import the external heightmap and terrain masks."
+    },
+    {
+      "name": "1km world layout",
+      "state": "ready",
+      "summary": "Layout contains 9 mesh placement(s).",
+      "evidence": "Assets/Art/Environment/FloatingWorld/Metadata/world_layout.json terrainSize=[1000.0, 180.0, 1000.0]",
+      "nextAction": "Keep layout at 1000m x 1000m x 180m so terrain exports and mesh chunks share scale."
+    },
+    {
+      "name": "Houdini procedural chunks",
+      "state": "ready",
+      "summary": "3 Houdini procedural chunk(s) exported.",
+      "evidence": "Assets/Art/Environment/FloatingWorld/Metadata/houdini_generated_assets.json",
+      "nextAction": "Run Unity builder so the generated chunks are integrated with LOD/colliders/streaming."
+    },
+    {
+      "name": "Reference/static mesh chunks",
+      "state": "ready",
+      "summary": "12 LOD0 FBX reference/static chunk(s) found.",
+      "evidence": "Assets/Art/Environment/FloatingWorld/FBX",
+      "nextAction": "Replace or augment blockout chunks with Houdini/ZBrush/Substance assets as they become available."
+    },
+    {
+      "name": "Substance PBR texture sets",
+      "state": "waiting",
+      "summary": "No complete BaseColor/Normal/MaskMap set found yet.",
+      "evidence": "Assets/Art/Environment/FloatingWorld/Materials/Textures",
+      "nextAction": "Install Substance Painter through Creative Cloud or export PBR sets from another licensed Substance install."
+    },
+    {
+      "name": "Unity integration scene",
+      "state": "ready",
+      "summary": "Unity scene and professional pipeline report are present.",
+      "evidence": "Assets/Scenes/FantasyOpenWorld.unity; Assets/TerrainPipeline/ImportReports/professional_pipeline_report.md",
+      "nextAction": "Rebuild Unity after every external terrain, Houdini, ZBrush, or Substance export."
+    }
+  ]
+}

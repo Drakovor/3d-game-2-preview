@@ -1,0 +1,20 @@
+{
+  "source": "/Users/drakovor/Documents/3D Game 2/Assets/Art/Environment/FloatingWorld/Houdini/fantasy_world_houdini_chunks.hip",
+  "assets": [
+    {
+      "name": "Houdini_CliffWall_A",
+      "role": "Cliff",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Houdini_CliffWall_A_LOD0.fbx"
+    },
+    {
+      "name": "Houdini_CaveEntrance_A",
+      "role": "Cave",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Houdini_CaveEntrance_A_LOD0.fbx"
+    },
+    {
+      "name": "Houdini_CanyonSegment_A",
+      "role": "Canyon",
+      "fbx": "Assets/Art/Environment/FloatingWorld/FBX/Houdini_CanyonSegment_A_LOD0.fbx"
+    }
+  ]
+}
