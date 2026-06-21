@@ -1,5 +1,5 @@
 {
-    "generatedAtUtc": "2026-06-21T15:13:38.0741250Z",
+    "generatedAtUtc": "2026-06-21T15:28:02.2663050Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
     "terrainHeightMeters": 180.0,
@@ -55,14 +55,19 @@
         ]
     },
     "meshStreaming": {
-        "totalSpecs": 90,
-        "streamCellCount": 90,
-        "lodGroupCount": 90,
-        "houdiniCellCount": 0,
+        "totalSpecs": 98,
+        "streamCellCount": 98,
+        "lodGroupCount": 98,
+        "houdiniCellCount": 3,
         "cc0MeshCellCount": 5,
-        "referenceCellCount": 85,
-        "meshColliderCount": 2598,
+        "referenceCellCount": 90,
+        "meshColliderCount": 2611,
         "streamCellNames": [
+            "GroundedIsland_Forest_StreamCell",
+            "GroundedIsland_Ruins_StreamCell",
+            "GroundedIsland_Volcano_StreamCell",
+            "GroundedIsland_Crystal_StreamCell",
+            "GroundedIsland_Snow_StreamCell",
             "PolyHaven_DeadTreeTrunk_ForestFloor_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_MudValley_A_StreamCell",
             "PolyHaven_DeadTreeTrunk_CaveApproach_A_StreamCell",
@@ -152,7 +157,10 @@
             "Blender_RavineWall_NorthRidge_StreamCell",
             "Blender_ScreeField_NorthRidge_StreamCell",
             "Blender_ErodedTerrace_WestReturn_StreamCell",
-            "Blender_RootBrush_WestReturn_StreamCell"
+            "Blender_RootBrush_WestReturn_StreamCell",
+            "Houdini_CanyonSegment_A_StreamCell",
+            "Houdini_CaveEntrance_A_StreamCell",
+            "Houdini_CliffWall_A_StreamCell"
         ],
         "missingFbx": []
     },
