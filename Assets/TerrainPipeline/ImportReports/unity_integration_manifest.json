@@ -1,8 +1,8 @@
 {
-    "generatedAtUtc": "2026-06-21T13:38:24.1150070Z",
+    "generatedAtUtc": "2026-06-21T14:07:37.2471310Z",
     "scene": "Assets/Scenes/FantasyOpenWorld.unity",
     "worldSizeMeters": 1000.0,
-    "terrainHeightMeters": 150.0,
+    "terrainHeightMeters": 180.0,
     "activeTerrainRoot": "Assets/TerrainPipeline/ExternalTerrainExports/Houdini",
     "terrain": {
         "imported": true,
@@ -14,7 +14,7 @@
         "alphamapResolution": 512,
         "baseMapResolution": 1024,
         "worldSizeMeters": 1000.0,
-        "heightMeters": 150.0,
+        "heightMeters": 180.0,
         "terrainLayerCount": 4,
         "terrainLayers": [
             "Moss_Dark",

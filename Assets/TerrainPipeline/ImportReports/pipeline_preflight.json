@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T13:36:57Z",
+  "generatedAt": "2026-06-21T14:06:22Z",
   "projectRoot": "/Users/drakovor/Documents/3D Game 2",
   "gates": [
     {
@@ -13,8 +13,8 @@
       "name": "1km world layout",
       "state": "ready",
       "summary": "Layout contains 88 mesh placement(s).",
-      "evidence": "Assets/Art/Environment/FloatingWorld/Metadata/world_layout.json terrainSize=[1000.0, 150.0, 1000.0]",
-      "nextAction": "Keep layout at 1000m x 1000m x 150m so terrain exports and mesh chunks share scale."
+      "evidence": "Assets/Art/Environment/FloatingWorld/Metadata/world_layout.json terrainSize=[1000.0, 180.0, 1000.0]",
+      "nextAction": "Keep layout at 1000m x 1000m x 180m so terrain exports and mesh chunks share scale."
     },
     {
       "name": "Houdini procedural chunks",

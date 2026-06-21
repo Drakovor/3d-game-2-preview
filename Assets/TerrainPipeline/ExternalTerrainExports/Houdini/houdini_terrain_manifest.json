@@ -3,7 +3,7 @@
   "sourceHip": "/Users/drakovor/Documents/3D Game 2/Assets/Art/Environment/FloatingWorld/Houdini/fantasy_world_houdini_heightfield.hip",
   "worldSizeMeters": [
     1000.0,
-    150.0,
+    180.0,
     1000.0
   ],
   "resolution": 1025,
@@ -22,7 +22,8 @@
     "north snow ridge",
     "south-west forest rise",
     "ruins plateau",
-    "lake and river masks"
+    "lake and river masks",
+    "folded ridge belts and basin rim masks for stronger explorable silhouettes"
   ],
-  "note": "Mac-local Houdini heightfield export for a 1km explorable world. Unity only imports these files."
+  "note": "Mac-local Houdini heightfield export for a 1km explorable world. Unity imports these height, slope, flow, deposit and biome files instead of sculpting the terrain itself."
 }
